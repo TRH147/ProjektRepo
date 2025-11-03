@@ -1,0 +1,13 @@
+﻿using RegisztracioTest.Model;
+
+namespace RegisztracioTest.Repositories.IRepositories
+{
+    public interface ILoginCodeRepository
+    {
+        Task<LoginCode?> GetValidCodeAsync(string email, string code);
+        Task<List<LoginCode>> GetActiveCodesForEmailAsync(string email);
+        Task AddAsync(LoginCode loginCode);
+        Task MarkAsUsedAsync(LoginCode loginCode);
+        Task MarkMultipleAsUsedAsync(List<LoginCode> loginCodes);
+    }
+}

@@ -1,0 +1,6 @@
+@RegisztracioTest_HostAddress = http://localhost:5152
+
+GET {{RegisztracioTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
