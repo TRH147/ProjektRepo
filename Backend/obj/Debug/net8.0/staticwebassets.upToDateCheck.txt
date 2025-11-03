@@ -1,4 +1,0 @@
-wwwroot\index.html
-wwwroot\css\style.css
-wwwroot\img\picture.webp
-wwwroot\js\index.js
