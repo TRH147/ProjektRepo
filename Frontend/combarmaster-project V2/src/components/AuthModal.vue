@@ -103,25 +103,24 @@ function switchTo(tab) { store.activeTab = tab }
 
 
 async function onLogin() {
-    try {
-        await store.login({ email: loginEmail.value, password: loginPassword.value })
-
-        loginEmail.value = ''
-        loginPassword.value = ''
-    } catch (e) {
-        alert('Hiba a bejelentkezés során')
-    }
+  try {
+    await store.login({ email: loginEmail.value, password: loginPassword.value })
+    loginEmail.value = ''
+    loginPassword.value = ''
+  } catch (e) {
+    // hibát a store már kiírja alert-tel
+  }
 }
 
 
 async function onRegister() {
-    try {
-        await store.register({ username: regUsername.value, email: regEmail.value, password: regPassword.value })
-        regUsername.value = ''
-        regEmail.value = ''
-        regPassword.value = ''
-    } catch (e) {
-        alert('Hiba a regisztráció során')
-    }
+  try {
+    await store.register({ username: regUsername.value, email: regEmail.value, password: regPassword.value })
+    regUsername.value = ''
+    regEmail.value = ''
+    regPassword.value = ''
+  } catch (e) {
+    // hibát a store már kiírja alert-tel
+  }
 }
 </script>

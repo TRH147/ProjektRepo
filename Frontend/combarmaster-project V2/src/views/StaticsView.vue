@@ -41,14 +41,14 @@
           </thead>
 
           <tbody>
-            <tr v-for="(player, i) in sortedData" :key="i">
-              <td>{{ player.name }}</td>
-              <td>{{ player.played }}</td>
-              <td>{{ player.wins }}</td>
-              <td>{{ player.losses }}</td>
-              <td>{{ player.kills }}</td>
-            </tr>
-          </tbody>
+                <tr v-for="(player, i) in sortedData" :key="i">
+                    <td>{{ player.username }}</td>
+                    <td>{{ player.matches }}</td>
+                    <td>{{ player.wins }}</td>
+                    <td>{{ player.losses }}</td>
+                    <td>{{ player.kills }}</td>
+                </tr>
+            </tbody>
         </table>
       </section>
 
@@ -81,23 +81,15 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-
+import { ref, computed, onMounted } from 'vue'
+import api from '../services/api' // itt az Axios instance
 
 const menuActive = ref(false)
 function toggleMenu() {
   menuActive.value = !menuActive.value
 }
 
-const data = ref([
-  { name: "A", played: 10, wins: 8, losses: 2, kills: 22 },
-  { name: "B", played: 5, wins: 1, losses: 4, kills: 3 },
-  { name: "C", played: 23, wins: 15, losses: 8, kills: 10 },
-  { name: "D", played: 1, wins: 0, losses: 1, kills: 6 },
-  { name: "E", played: 34, wins: 4, losses: 30, kills: 3 },
-  { name: "F", played: 4, wins: 4, losses: 0, kills: 10 }
-])
-
+const data = ref([]) // ide töltjük a backendből jövő statisztikákat
 
 const sortColumn = ref(null)
 const sortAsc = ref(true)
@@ -114,7 +106,7 @@ function sortTable(columnIndex) {
 const sortedData = computed(() => {
   if (sortColumn.value === null) return data.value
 
-  const keyMap = ["name", "played", "wins", "losses", "kills"]
+  const keyMap = ["username", "matches", "wins", "losses", "kills"]
   const key = keyMap[sortColumn.value]
 
   return [...data.value].sort((a, b) => {
@@ -125,6 +117,21 @@ const sortedData = computed(() => {
     }
     return sortAsc.value ? a[key] - b[key] : b[key] - a[key]
   })
+})
+
+// --- Backend lekérés ---
+async function fetchStats() {
+  try {
+    const response = await api.get('/UserStats/all')
+    data.value = response.data // feltételezve, hogy minden statisztika tartalmazza a nevet is
+  } catch (err) {
+    console.error('Hiba az adatok lekérésekor:', err)
+    data.value = []
+  }
+}
+
+onMounted(() => {
+  fetchStats()
 })
 </script>
 
