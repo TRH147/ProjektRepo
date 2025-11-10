@@ -3,6 +3,6 @@
     public interface IPasswordResetService
     {
         Task SendResetCodeAsync(string email);
-        Task<bool> ResetPasswordAsync(string email, string code, string newPassword);
+        Task<bool> ResetPasswordAsync(string code, string newPassword);
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RegisztracioTest.Dtos.ForgotPasswordRequestDto;
 using RegisztracioTest.Dtos.ResetPasswordDto;
 using RegisztracioTest.Services.IServices;
@@ -34,9 +33,9 @@ namespace RegisztracioTest.Controllers
         [HttpPost("reset")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDto dto)
         {
-            var success = await _resetService.ResetPasswordAsync(dto.Email, dto.Code, dto.NewPassword);
+            var success = await _resetService.ResetPasswordAsync(dto.Code, dto.NewPassword);
             if (!success)
-                return BadRequest(new { message = "Érvénytelen kód vagy email." });
+                return BadRequest(new { message = "Érvénytelen vagy lejárt kód." });
 
             return Ok(new { message = "A jelszó sikeresen megváltoztatva." });
         }
