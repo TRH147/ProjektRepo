@@ -19,6 +19,33 @@ namespace RegisztracioTest.Controllers
             _userRepository = userRepository;
         }
 
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAllStats()
+        {
+            // Lekérjük az összes statisztikát
+            var allStats = await _statsService.GetAllAsync();
+
+            if (allStats == null || !allStats.Any())
+                return NotFound(new { message = "Nincs elérhető statisztika." });
+
+            // DTO lista létrehozása felhasználói adatokkal
+            var result = new List<UserStatsReadDto>();
+            foreach (var stats in allStats)
+            {
+                var user = await _userRepository.GetByIdAsync(stats.Id);
+                result.Add(new UserStatsReadDto
+                {
+                    Username = user?.Username ?? "Ismeretlen",
+                    Matches = stats.Matches,
+                    Wins = stats.Wins,
+                    Losses = stats.Losses,
+                    Kills = stats.Kills
+                });
+            }
+
+            return Ok(result);
+        }
+
         [HttpGet("{userId}")]
         public async Task<IActionResult> GetStats(int userId)
         {

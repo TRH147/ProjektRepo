@@ -14,6 +14,11 @@ namespace RegisztracioTest.Services
             _context = context;
         }
 
+        public async Task<IEnumerable<UserStats>> GetAllAsync()
+        {
+            return await _context.UserStats.ToListAsync();
+        }
+
         public async Task<UserStats?> GetByUserIdAsync(int userId)
         {
             return await _context.UserStats.FirstOrDefaultAsync(s => s.Id == userId);

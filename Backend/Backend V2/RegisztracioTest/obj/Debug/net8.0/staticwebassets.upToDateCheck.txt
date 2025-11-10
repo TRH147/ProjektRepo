@@ -1,0 +1,4 @@
+wwwroot\css\style.css
+wwwroot\img\picture.webp
+wwwroot\index.html
+wwwroot\js\index.js

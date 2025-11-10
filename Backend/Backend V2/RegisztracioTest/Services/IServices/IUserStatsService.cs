@@ -6,6 +6,7 @@ namespace RegisztracioTest.Services.IServices
 {
     public interface IUserStatsService
     {
+        Task<IEnumerable<UserStats>> GetAllAsync();
         Task<UserStats?> GetByUserIdAsync(int userId);
         Task<UserStats> IncrementMatchesAsync(int userId, int amount = 1);
         Task<UserStats> IncrementWinsAsync(int userId, int amount = 1);
