@@ -1,0 +1,25 @@
+# ----------------------------
+# .NET / Visual Studio
+# ----------------------------
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.tmp
+*.log
+.vs/
+
+# ----------------------------
+# Unity
+# ----------------------------
+UnityProject/Library/
+UnityProject/Temp/
+UnityProject/Logs/
+UnityProject/MemoryCaptures/
+
+# ----------------------------
+# Frontend (Node.js / npm)
+# ----------------------------
+Frontend/**/node_modules/
+Frontend/**/dist/
+Frontend/**/.env
