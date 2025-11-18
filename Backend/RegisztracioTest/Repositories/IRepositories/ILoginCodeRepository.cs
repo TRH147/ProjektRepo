@@ -5,9 +5,11 @@ namespace RegisztracioTest.Repositories.IRepositories
     public interface ILoginCodeRepository
     {
         Task<LoginCode?> GetValidCodeAsync(string email, string code);
-        Task<List<LoginCode>> GetActiveCodesForEmailAsync(string email);
+        Task<IEnumerable<LoginCode>> GetActiveCodesForEmailAsync(string email);
         Task AddAsync(LoginCode loginCode);
         Task MarkAsUsedAsync(LoginCode loginCode);
-        Task MarkMultipleAsUsedAsync(List<LoginCode> loginCodes);
+        Task MarkMultipleAsUsedAsync(IEnumerable<LoginCode> loginCodes);
+
+        Task<LoginCode?> GetValidCodeByCodeAsync(string code);
     }
 }

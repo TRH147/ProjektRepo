@@ -1,13 +1,17 @@
 ﻿using RegisztracioTest.Dtos.AuthDto;
+using RegisztracioTest.Dtos.UserDto;
 
 namespace RegisztracioTest.Services.IServices
 {
     public interface IAuthService
     {
-        Task<AuthResponseDto> RegisterAsync(UserCreateDto registerDto);
+        Task<UserReadDto> RegisterUserAsync(UserCreateDto registerDto);
         Task<AuthResponseDto> LoginAsync(UserLoginDto loginDto);
-        Task<AuthResponseDto> LoginWithCodeAsync(string email);
-        public Task UpdateUserActivityAsync(string email);
+        Task<UserReadDto?> GetUserByEmailAsync(string email);
+        Task UpdateUserActivityAsync(string email);
         Task<bool> UserExistsAsync(string email);
+
+        // JWT csak adminnak
+        //string GenerateAdminJwtToken();//
     }
 }

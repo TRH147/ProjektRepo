@@ -14,6 +14,52 @@ body {
     background: #1c1c1c;
 }
 
+/* profile */
+.user-pic{
+    width: 50px;
+    border-radius: 50%;
+}
+.user-menu {
+    position: absolute;
+    top: 70px;
+    right: 145px;
+    background: #1c1c1c;
+    border: 1px solid #fae9d7;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 150px;
+    display: none;
+    flex-direction: column;
+    z-index: 200;
+}
+.user-menu a {
+    color: #fae9d7;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+}
+
+.user-menu a:hover {
+    color: #1c1c1c;
+}
+
+.user-menu.active {
+    display: flex;
+}
+
+.user-menu.mobile {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 8px;
+}
+/* profile */
+
 .my-cover {
     width: 100%;
     height: 100%;
@@ -57,17 +103,14 @@ body {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     padding: 10px 12.5%;
-    background: #fae9d729;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -83,10 +126,12 @@ body {
 
 .navbar a {
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     color: #fae9d7;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     margin-right: 30px;
 }
 
@@ -99,16 +144,18 @@ body {
 }
 
 .navbar .btnLogin-popup {
-    width: 130px;
+    width: 135px;
     height: 50px;
     background: transparent;
     border: 2px solid #fae9d7;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     color: #fae9d7;
-    font-weight: 500;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     transition: .5s;
 }
 
@@ -155,7 +202,7 @@ body {
     transition: 0.3s;
 }
 
-@media (max-width: 730px),
+@media (max-width: 850px),
 (max-height: 480px) {
     .hamburger {
         display: flex;
@@ -197,7 +244,7 @@ body {
     }
 }
 
-.container {
+.auth-container {
     position: fixed;
     top: calc(50% + 15px);
     left: 50%;
@@ -205,8 +252,7 @@ body {
     width: 75%;
     height: 550px;
     background: 
-    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('./fokep.jpg') no-repeat center center / cover;
+    url('./bigpicture.webp') no-repeat center center / cover;
     border-radius: 10px;
     overflow: hidden;
     opacity: 0;
@@ -215,13 +261,13 @@ body {
     z-index: 3;
 }
 
-.container.active-popup {
+.auth-container.active-popup {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     pointer-events: auto;
 }
 
-.container .icon-close {
+.auth-container .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -238,7 +284,7 @@ body {
     z-index: 1;
 }
 
-.container .content {
+.auth-container .content {
     position: absolute;
     top: 0;
     left: 0;
@@ -256,7 +302,7 @@ body {
     font-size: 40px;
 }
 
-.container h2 {
+.auth-container h2 {
     font-size: 50px;
 }
 
@@ -270,7 +316,7 @@ body {
     margin: 20px 0;
 }
 
-.container .logreg-box {
+.auth-container .logreg-box {
     position: absolute;
     top: 0;
     right: 0;
@@ -367,8 +413,9 @@ body {
     font-size: 14.5px;
     font-weight: 500;
     margin: -15px 0 15px;
+    color: #fae9d7;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .btn {
@@ -404,14 +451,14 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .container {
+    .auth-container {
         width: 90%;
         height: auto;
         min-height: 550px;
         transform: translate(-50%, -50%) scale(0.9);
     }
 
-    .container .content {
+    .auth-container .content {
         padding: 50px;
         width: 50%;
     }
@@ -422,7 +469,7 @@ body {
 }
 
 @media (max-width: 750px) {
-    .container {
+    .auth-container {
         width: 95%;
         height: auto;
         min-height: 550px;
@@ -431,12 +478,12 @@ body {
         overflow-y: auto;
     }
 
-    .container .content {
+    .auth-container .content {
         width: 55%;
         padding: 40px;
     }
 
-    .container .logreg-box {
+    .auth-container .logreg-box {
         width: 45%;
     }
 
@@ -452,7 +499,7 @@ body {
         font-size: 28px;
     }
 
-    .container .content .logo {
+    .auth-container .content .logo {
         font-size: 32px;
     }
 
@@ -464,7 +511,7 @@ body {
         font-size: 14px;
     }
 
-    .container .icon-close {
+    .auth-container .icon-close {
         width: 40px;
         height: 40px;
         font-size: 1.5em;
@@ -481,7 +528,7 @@ body {
 }
 
 @media (max-width: 500px) {
-    .container {
+    .auth-container {
         transform: translate(-50%, -50%) scale(0.8);
     }
 }

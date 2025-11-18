@@ -1,6 +1,7 @@
-namespace IsmetlesWebAPI.Services.IServices;
-
-public interface IEmailService
+namespace RegisztracioTest.Services.IServices
 {
-    public Task<bool> SendLoginCodeAsync(string email, string code);
+    public interface IEmailService
+    {
+        Task SendEmailAsync(string to, string subject, string body);
+    }
 }

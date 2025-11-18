@@ -10,6 +10,14 @@
   </div>
 </template>
 
+<style>
+body.forgot-password-bg {
+    background: url('/src/assets/picture.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+</style>
+
 <script setup>
 import { useRoute } from 'vue-router'
 import SiteHeader from './components/SiteHeader.vue'

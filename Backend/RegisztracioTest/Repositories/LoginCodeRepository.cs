@@ -25,11 +25,11 @@ namespace RegisztracioTest.Repositories
                     c.ExpiresAt > DateTime.UtcNow);
         }
 
-        public async Task<List<LoginCode>> GetActiveCodesForEmailAsync(string email)
+        public async Task<IEnumerable<LoginCode>> GetActiveCodesForEmailAsync(string email)
         {
             return await _context.LoginCodes
                 .Where(c => c.Email == email && !c.IsUsed && c.ExpiresAt > DateTime.UtcNow)
-                .ToListAsync();
+                .ToListAsync(); // List<LoginCode> implicit IEnumerable<LoginCode>
         }
 
         public async Task AddAsync(LoginCode loginCode)
@@ -44,13 +44,22 @@ namespace RegisztracioTest.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task MarkMultipleAsUsedAsync(List<LoginCode> loginCodes)
+        public async Task MarkMultipleAsUsedAsync(IEnumerable<LoginCode> loginCodes)
         {
             foreach (var code in loginCodes)
             {
                 code.IsUsed = true;
             }
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<LoginCode?> GetValidCodeByCodeAsync(string code)
+        {
+            return await _context.LoginCodes
+                .FirstOrDefaultAsync(c =>
+                    c.Code == code &&
+                    !c.IsUsed &&
+                    c.ExpiresAt > DateTime.UtcNow);
         }
     }
 }

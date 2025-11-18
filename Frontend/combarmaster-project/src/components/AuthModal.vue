@@ -1,5 +1,5 @@
 <template>
-    <div :class="['container', { 'active-popup': store.isAuthModalOpen }]">
+    <div :class="['auth-container', { 'active-popup': store.isAuthModalOpen }]">
         <span class="icon-close" @click="store.closeAuth"><i class='bx bx-x'></i></span>
 
 
@@ -21,9 +21,9 @@
 
 
                     <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input v-model="loginEmail" type="email" required />
-                        <label>Email</label>
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input v-model="loginUsername" type="text" required />
+                        <label>Felhasználónév</label>
                     </div>
 
 
@@ -32,6 +32,12 @@
                         <input v-model="loginPassword" type="password" required />
                         <label>Jelszó</label>
                     </div>
+
+                    <a href="#" class="remember-forgot" @click.prevent="goToForgot">
+                        Elfelejtett Jelszó
+                    </a>
+
+
 
 
                     <button type="submit" class="btn">Bejelentkezés</button>
@@ -87,41 +93,59 @@
 <script setup>
 import { ref } from 'vue'
 import { useUserStore } from '../stores/user'
+import { useRouter } from 'vue-router'
 
-
+const router = useRouter()
 const store = useUserStore()
 
-
-const loginEmail = ref('')
+// Login inputok
+const loginUsername = ref('') // <-- ez kell a template-hez
 const loginPassword = ref('')
+
+// Register inputok
 const regUsername = ref('')
 const regEmail = ref('')
 const regPassword = ref('')
 
-
+// Átváltás login / register tabok között
 function switchTo(tab) { store.activeTab = tab }
 
-
-async function onLogin() {
-    try {
-        await store.login({ email: loginEmail.value, password: loginPassword.value })
-
-        loginEmail.value = ''
-        loginPassword.value = ''
-    } catch (e) {
-        alert('Hiba a bejelentkezés során')
-    }
+// "Elfelejtett jelszó" oldalra navigálás
+function goToForgot() {
+  store.closeAuth()
+  router.push('/forgot-password')
 }
 
+// Login függvény
+async function onLogin() {
+  try {
+    const response = await store.login({
+      username: loginUsername.value,
+      password: loginPassword.value
+    });
 
-async function onRegister() {
-    try {
-        await store.register({ username: regUsername.value, email: regEmail.value, password: regPassword.value })
-        regUsername.value = ''
-        regEmail.value = ''
-        regPassword.value = ''
-    } catch (e) {
-        alert('Hiba a regisztráció során')
+    loginUsername.value = '';
+    loginPassword.value = '';
+
+    // Ha admin, irányítás az admin dashboard-ra
+    if (response.isAdmin) {
+      router.push('/admin'); // admin.vue route
     }
+    // Normál felhasználónál nincs átirányítás
+  } catch (e) {
+    // hibát a store már kiírja alert-tel
+  }
+}
+
+// Register függvény
+async function onRegister() {
+  try {
+    await store.register({ username: regUsername.value, email: regEmail.value, password: regPassword.value })
+    regUsername.value = ''
+    regEmail.value = ''
+    regPassword.value = ''
+  } catch (e) {
+    // hibát a store már kiírja alert-tel
+  }
 }
 </script>

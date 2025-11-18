@@ -1,11 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using RegisztracioTest.Data;
 using RegisztracioTest.Repositories;
 using RegisztracioTest.Repositories.IRepositories;
 using RegisztracioTest.Services;
 using RegisztracioTest.Services.IServices;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -30,7 +30,40 @@ builder.Services.AddDbContext<RegistrationDbContext>(options =>
 // -----------------------
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "My API",
+        Version = "v1"
+    });
+
+    // JWT Bearer auth
+    c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = Microsoft.OpenApi.Models.ParameterLocation.Header,
+        Description = "JWT Authorization header using the Bearer scheme. \r\n\r\nEnter 'Bearer' [space] and then your token."
+    });
+
+    c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
+    {
+        {
+            new Microsoft.OpenApi.Models.OpenApiSecurityScheme
+            {
+                Reference = new Microsoft.OpenApi.Models.OpenApiReference
+                {
+                    Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
 // -----------------------
 // CORS (minden origin, minden metódus, credentials engedélyezve)
@@ -48,14 +81,21 @@ builder.Services.AddCors(options =>
 // -----------------------
 // Repositories regisztráció
 // -----------------------
-builder.Services.AddScoped<IUserRepository, Userrepository>();
-builder.Services.AddScoped<ILoginCodeRepository, LoginCodeRepository>(); // ha van
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ILoginCodeRepository, LoginCodeRepository>();
+builder.Services.AddScoped<IPasswordResetRepository, PasswordResetRepository>();
 
 // -----------------------
 // Services regisztráció
 // -----------------------
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICodeService, CodeService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddHostedService<ExpiredCodeCleanupService>();
+builder.Services.AddScoped<IUserStatsService, UserStatsService>();
+builder.Services.AddScoped<IFriendRequestRepository, FriendRequestRepository>();
+builder.Services.AddScoped<IFriendRequestService, FriendRequestService>();
+builder.Services.AddScoped<IPasswordResetService, PasswordResetService>();
 
 // -----------------------
 // MemoryCache a CodeService-nek
@@ -88,20 +128,17 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+
 var app = builder.Build();
 
 app.UseCors("AllowFrontend");
 
 // -----------------------
-// Static fájlok (index.html betöltés)
-// -----------------------
-// app.UseDefaultFiles(); // automatikusan index.html-t tölt be
-// app.UseStaticFiles(); //  // engedélyezi a wwwroot fájlokat
-
-// -----------------------
 // CORS middleware (elõtte auth)
 // -----------------------
 app.UseCors("AllowMobile");
+
+app.UseStaticFiles();
 
 // -----------------------
 // Authentication / Authorization

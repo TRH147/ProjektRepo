@@ -12,11 +12,15 @@
 
       <nav :class="['navbar', { active: menuActive }]">
         <router-link to="/">Főoldal</router-link>
-        <router-link to="/update">Frissítések</router-link>
+        <router-link to="/update">Újdonságok</router-link>
         <router-link to="/statics" class="active">Statisztika</router-link>
         <router-link to="/forum">Fórum</router-link>
       </nav>
     </header>
+
+    <div class="banner">
+      <img src="/src/assets/bigpicture.webp" alt="banner">
+    </div>
 
     
     <main class="custon_table">
@@ -37,14 +41,14 @@
           </thead>
 
           <tbody>
-            <tr v-for="(player, i) in sortedData" :key="i">
-              <td>{{ player.name }}</td>
-              <td>{{ player.played }}</td>
-              <td>{{ player.wins }}</td>
-              <td>{{ player.losses }}</td>
-              <td>{{ player.kills }}</td>
-            </tr>
-          </tbody>
+                <tr v-for="(player, i) in sortedData" :key="i">
+                    <td>{{ player.username }}</td>
+                    <td>{{ player.matches }}</td>
+                    <td>{{ player.wins }}</td>
+                    <td>{{ player.losses }}</td>
+                    <td>{{ player.kills }}</td>
+                </tr>
+            </tbody>
         </table>
       </section>
 
@@ -62,7 +66,7 @@
 
       <ul class="list">
         <li><router-link to="/">Főoldal</router-link></li>
-        <li><router-link to="/update">Frissítések</router-link></li>
+        <li><router-link to="/update">Újdonságok</router-link></li>
         <li><router-link to="/statics">Statisztika</router-link></li>
         <li><router-link to="/forum">Fórum</router-link></li>
       </ul>
@@ -77,23 +81,15 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
-
+import { ref, computed, onMounted } from 'vue'
+import api from '../services/api' // itt az Axios instance
 
 const menuActive = ref(false)
 function toggleMenu() {
   menuActive.value = !menuActive.value
 }
 
-const data = ref([
-  { name: "A", played: 10, wins: 8, losses: 2, kills: 22 },
-  { name: "B", played: 5, wins: 1, losses: 4, kills: 3 },
-  { name: "C", played: 23, wins: 15, losses: 8, kills: 10 },
-  { name: "D", played: 1, wins: 0, losses: 1, kills: 6 },
-  { name: "E", played: 34, wins: 4, losses: 30, kills: 3 },
-  { name: "F", played: 4, wins: 4, losses: 0, kills: 10 }
-])
-
+const data = ref([]) // ide töltjük a backendből jövő statisztikákat
 
 const sortColumn = ref(null)
 const sortAsc = ref(true)
@@ -110,7 +106,7 @@ function sortTable(columnIndex) {
 const sortedData = computed(() => {
   if (sortColumn.value === null) return data.value
 
-  const keyMap = ["name", "played", "wins", "losses", "kills"]
+  const keyMap = ["username", "matches", "wins", "losses", "kills"]
   const key = keyMap[sortColumn.value]
 
   return [...data.value].sort((a, b) => {
@@ -121,6 +117,21 @@ const sortedData = computed(() => {
     }
     return sortAsc.value ? a[key] - b[key] : b[key] - a[key]
   })
+})
+
+// --- Backend lekérés ---
+async function fetchStats() {
+  try {
+    const response = await api.get('/UserStats/all')
+    data.value = response.data // feltételezve, hogy minden statisztika tartalmazza a nevet is
+  } catch (err) {
+    console.error('Hiba az adatok lekérésekor:', err)
+    data.value = []
+  }
+}
+
+onMounted(() => {
+  fetchStats()
 })
 </script>
 
@@ -143,17 +154,14 @@ body{
 }
 
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: absolute;
     width: 100%;
     padding: 10px 12.5%;
-    background: #fae9d729;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    backdrop-filter: blur(10px);
 }
 
 .logo{
@@ -169,10 +177,12 @@ body{
 
 .navbar a{
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     color: #fae9d7;
     text-decoration: none;
-    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    font-weight: 600;
     margin-right: 30px;
 }
 
@@ -257,6 +267,22 @@ body{
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -7px);
     }
+}
+
+.banner {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 

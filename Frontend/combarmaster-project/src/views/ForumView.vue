@@ -12,43 +12,28 @@
 
       <nav :class="['navbar', { active: menuActive }]">
         <router-link to="/">Főoldal</router-link>
-        <router-link to="/update">Frissítések</router-link>
+        <router-link to="/update">Újdonságok</router-link>
         <router-link to="/statics">Statisztika</router-link>
         <router-link to="/forum" class="active">Fórum</router-link>
       </nav>
     </header>
 
+    <div class="banner">
+      <img src="/src/assets/bigpicture.webp" alt="banner">
+    </div>
 
-    <div class="cim">
+
+    <div class="coming-text">
       <h1>Coming Soon!</h1>
     </div>
 
 
-    <section class="footer">
-      <h3>Kövess minket közösségi médián</h3>
-      <div class="social">
-        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
-      </div>
-
-      <ul class="list">
-        <li><router-link to="/">Főoldal</router-link></li>
-        <li><router-link to="/update">Frissítések</router-link></li>
-        <li><router-link to="/statics">Statisztika</router-link></li>
-        <li><router-link to="/forum">Fórum</router-link></li>
-      </ul>
-
-      <h4>Rólunk</h4>
-      <p class="copyright">
-        Csapatunk 3 junior fejlesztőből áll össze, kiknek célja egy olyan játék fejlesztése,
-        amely lépést tud tartani a mai modern videójátékipar termékeivel.
-      </p>
-    </section>
+    <FooterComponent />
   </div>
 </template>
 
 <script setup>
+import FooterComponent from '../components/SiteFooter.vue'
 import { ref } from 'vue'
 
 const menuActive = ref(false)
@@ -74,17 +59,14 @@ body {
 
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 100%;
   padding: 10px 12.5%;
-  background: #fae9d729;
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -100,10 +82,12 @@ body {
 
 .navbar a {
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   color: #fae9d7;
   text-decoration: none;
-  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  font-weight: 600;
   margin-right: 30px;
 }
 
@@ -192,27 +176,46 @@ body {
   }
 }
 
-
-.cim {
-  color: #fae9d7;
-  font-size: 55px;
-  margin-top: 100px;
-  text-align: center;
+.banner {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container h1 {
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.coming-text{
+  margin-top: 50px;
+  text-align: center;
   color: #fae9d7;
+}
+
+.coming-text h1{
   font-size: 100px;
 }
 
-
-.footer {
-  padding: 40px 0;
-  background: #fae9d7;
-  margin-top: 214px;
+@media (max-width: 768px){
+  .coming-text h1{
+    font-size: 60px;
+  }
 }
 
-.footer h3 {
+
+.footer{
+  position: relative;
+  margin-top: 60px;
+  background: #fae9d7;
+}
+
+.footer h3{
   text-align: center;
   color: #1c1c1c;
   margin-bottom: 25px;
@@ -220,60 +223,61 @@ body {
   letter-spacing: 1px;
 }
 
-.footer h4 {
+.footer h4{
   text-align: center;
   color: #1c1c1c;
   margin-top: 15px;
   font-size: 18px;
 }
 
-.footer .social {
+.footer .social{
   text-align: center;
   padding-bottom: 25px;
   color: #1c1c1c;
 }
 
-.footer .social a {
+.footer .social a{
   font-size: 24px;
+  color: inherit;
   border: 1px solid #1c1c1c;
   width: 40px;
   height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 43px;
+  display: inline-block;
+  text-align: center;
   border-radius: 50%;
   margin: 0 8px;
-  text-decoration: none;
-  transition: 0.3s;
 }
 
-.footer .social a:hover {
+.footer .social a:hover{
   color: #d55053;
 }
 
-.footer ul {
+.footer ul{
+  margin-top: 0;
+  padding: 0;
   list-style: none;
   font-size: 18px;
   line-height: 1.6;
+  margin-bottom: 0;
   text-align: center;
-  padding: 0;
 }
 
-.footer ul li {
-  display: inline-block;
-  padding: 0 15px;
-}
-
-.footer ul li a {
+.footer ul li a{
   color: inherit;
   text-decoration: none;
 }
 
-.footer ul li a:hover {
+.footer ul li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover{
   color: #d55053;
 }
 
-.footer .copyright {
+.footer .copyright{
   margin-top: 15px;
   text-align: center;
   font-size: 15px;

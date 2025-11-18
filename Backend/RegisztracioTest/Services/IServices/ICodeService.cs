@@ -1,9 +1,11 @@
-﻿namespace RegisztracioTest.Services.IServices
+﻿using RegisztracioTest.Dtos.UserDto;
+
+namespace RegisztracioTest.Services.IServices
 {
     public interface ICodeService
     {
-        public string GenerateCode();
-        public Task<bool> StoreCodeAsync(string email, string code);
-        public Task<bool> ValidateCodeAsync(string email, string code);
+        string GenerateCode();
+        Task<bool> StoreCodeAsync(string email, string code);
+        Task<UserReadDto?> ValidateCodeAsync(string code);
     }
 }

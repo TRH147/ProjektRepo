@@ -11,5 +11,11 @@ namespace RegisztracioTest.Repositories.IRepositories
         Task<User> UpdateAsync(User user);
         Task<bool> EmailExistsAsync(string email);
         Task<bool> UsernameExistsAsync(string username);
+
+        // -----------------------
+        // Admin metódusok
+        // -----------------------
+        Task<List<User>> GetAllAsync();
+        Task DeleteAsync(User user);
     }
 }

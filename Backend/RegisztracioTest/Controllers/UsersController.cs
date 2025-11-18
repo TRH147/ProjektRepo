@@ -1,341 +1,243 @@
-﻿using System.Net;
-using BCrypt.Net; // Jelszó hash/ellenőrzéshez
-using SmtpClient = MailKit.Net.Smtp.SmtpClient;
-using Microsoft.AspNetCore.Authorization; // [Authorize]
-using Microsoft.AspNetCore.Mvc; // ControllerBase, ActionResult, Http* attribútumok
-using Microsoft.EntityFrameworkCore; // EF Core async metódusokhoz
-using Microsoft.Extensions.Configuration; // IConfiguration
-using Microsoft.IdentityModel.Tokens; // SymmetricSecurityKey, SigningCredentials
-using MimeKit;
-using RegisztracioTest.Data; // RegistrationDbContext
-using RegisztracioTest.Dtos.AuthDto; // UserCreateDto, UserReadDto
-using RegisztracioTest.Model; // User entitás
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using RegisztracioTest.Data;
+using RegisztracioTest.Dtos.UploadProfileImageDto;
+using RegisztracioTest.Dtos.UserDto;
+using RegisztracioTest.Repositories.IRepositories;
 using RegisztracioTest.Services.IServices;
-using System.IdentityModel.Tokens.Jwt; // JwtSecurityToken, JwtSecurityTokenHandler
-using System.Security.Claims; // ClaimTypes, Claim
-using System.Text;
-using System.Net.Mail;
-using System.Net.Sockets; // Encoding.UTF8
+using System.Security.Claims;
 
-
-namespace RegisztracioTest.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class UsersController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UsersController : ControllerBase
+    private readonly IAuthService _authService;
+    private readonly ILogger<UsersController> _logger;
+    private readonly IConfiguration _configuration;
+    private readonly IUserRepository _userRepository;
+    private readonly RegistrationDbContext _context;
+
+    public UsersController(
+        IAuthService authService,
+        IConfiguration configuration,
+        ILogger<UsersController> logger,
+        IUserRepository userRepository,
+        RegistrationDbContext context)
     {
-        private readonly RegistrationDbContext _context;
-        private readonly IConfiguration _configuration;
-        private readonly IAuthService _authService;
-        private readonly ICodeService _codeService;
-        private readonly ILogger<UsersController> _logger;
+        _authService = authService;
+        _configuration = configuration;
+        _logger = logger;
+        _userRepository = userRepository;
+        _context = context;
+    }
 
-        public UsersController(
-            RegistrationDbContext context,
-            IConfiguration configuration,
-            IAuthService authService,
-            ICodeService codeService,
-            ILogger<UsersController> logger)
+    [HttpPost("register")]
+    public async Task<ActionResult> Register([FromBody] UserCreateDto createDto)
+    {
+        try
         {
-            _context = context;
-            _configuration = configuration;
-            _authService = authService;
-            _codeService = codeService;
-            _logger = logger;
-        }
+            var password = createDto.Password;
+            var errors = new List<string>();
 
-        public class LoginRequest
-        {
-            public string Username { get; set; } = null!;
-            public string Password { get; set; } = null!;
-        }
+            // Minimum 8 karakter
+            if (string.IsNullOrWhiteSpace(password) || password.Length < 8)
+                errors.Add("A jelszónak legalább 8 karakterből kell állnia.");
 
-        // -------------------------------
-        // REGISZTRÁCIÓ
-        // -------------------------------
-        [HttpPost("register")]
-        public async Task<ActionResult<UserReadDto>> Register([FromBody] UserCreateDto dto)
-        {
-            if (await _context.Users.AnyAsync(u => u.Email == dto.Email || u.Username == dto.Username))
-                return BadRequest(new { message = "Username or Email already exists" });
+            // Legalább 1 nagybetű
+            if (!password.Any(char.IsUpper))
+                errors.Add("A jelszónak legalább 1 nagybetűt kell tartalmaznia.");
 
-            var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+            // Legalább 1 szám
+            if (!password.Any(char.IsDigit))
+                errors.Add("A jelszónak legalább 1 számot kell tartalmaznia.");
 
-            var user = new User
+            if (errors.Any())
+                return BadRequest(new { message = "A jelszó nem felel meg a követelményeknek.", details = errors });
+
+            var user = await _authService.RegisterUserAsync(createDto);
+            return Ok(new
             {
-                Username = dto.Username,
-                Email = dto.Email,
-                PasswordHash = passwordHash
-            };
-
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
-
-            // -------------------------------
-            // USERSTATS AUTOMATIKUS LÉTREHOZÁS
-            // -------------------------------
-            var stats = new UserStats
-            {
-                Id = user.Id,
-                Matches = 0,
-                Wins = 0,
-                Losses = 0,
-                Kills = 0
-            };
-
-            _context.UserStats.Add(stats);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetUser), new { id = user.Id }, new UserReadDto
-            {
-                Id = user.Id,
-                Username = user.Username,
-                Email = user.Email
+                message = "Sikeres regisztráció!",
+                user
             });
         }
-
-        // -------------------------------
-        // LOGIN (email + password)
-        // -------------------------------
-        [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] UserLoginDto request)
+        catch (InvalidOperationException ex)
         {
-            // Ellenőrizzük, hogy az email létezik
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.Email);
+            return BadRequest(new { message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Hiba történt a regisztráció során.");
+            return StatusCode(500, new { message = "Hiba történt a regisztráció során" });
+        }
+    }
 
-            if (user == null)
-                return BadRequest(new { message = "Email not registered" });
-
-            // Ellenőrizzük a jelszót
-            if (!BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
-                return Unauthorized(new { message = "Invalid credentials" });
-
-            // JWT token generálása
-            var token = GenerateJwtToken(user);
+    // -------------------------------
+    // LOGIN
+    // -------------------------------
+    [HttpPost("login")]
+    public async Task<IActionResult> Login([FromBody] UserLoginDto loginDto)
+    {
+        try
+        {
+            var loginResponse = await _authService.LoginAsync(loginDto); // feltételezem, itt generálódik a token is
 
             return Ok(new
             {
-                Token = token,
-                Id = user.Id,
-                Username = user.Username,
-                Email = user.Email
+                message = "Sikeres bejelentkezés!",
+                token = loginResponse.Token,  // <<< EZT ADJUK HOZZÁ
+                data = loginResponse           // a user adatai
             });
         }
-
-        // -------------------------------
-        // LOGIN KÓD GENERÁLÁS
-        // -------------------------------
-        [HttpPost("send-code")]
-        public async Task<ActionResult<SendCodeResponseDto>> SendLoginCode([FromBody] SendCodeRequestDto request)
+        catch (UnauthorizedAccessException ex)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(new { message = "Invalid email address" });
+            return Unauthorized(new { message = ex.Message });
+        }
+    }
 
-            try
+    [HttpPut("users/{id}/username")]
+    public async Task<ActionResult> UpdateUsername(int id, [FromBody] UpdateUsernameDto dto)
+    {
+        var user = await _userRepository.GetByIdAsync(id);
+        if (user == null)
+            return NotFound(new { message = "Felhasználó nem található." });
+
+        if (string.IsNullOrWhiteSpace(dto.CurrentUsername) || string.IsNullOrWhiteSpace(dto.NewUsername))
+            return BadRequest(new { message = "A jelenlegi és az új felhasználónév megadása kötelező." });
+
+        // Ellenőrzés: a megadott jelenlegi név egyezik-e a tényleges felhasználónévvel
+        if (!user.Username.Equals(dto.CurrentUsername, StringComparison.Ordinal))
+            return BadRequest(new { message = "A jelenlegi felhasználónév nem egyezik." });
+
+        user.Username = dto.NewUsername;
+        await _userRepository.UpdateAsync(user);
+
+        return Ok(new
+        {
+            message = "A felhasználónév sikeresen frissítve!",
+            updatedUser = new
             {
-                var userExists = await _authService.UserExistsAsync(request.Email);
-                if (!userExists)
-                    return BadRequest(new { message = "Email not registered" });
-
-                var code = _codeService.GenerateCode();
-                var codeStored = await _codeService.StoreCodeAsync(request.Email, code);
-                if (!codeStored)
-                    return StatusCode(500, new { message = "Error storing code" });
-
-                // -----------------------
-                // Email küldés
-                // -----------------------
-                var message = new MimeMessage();
-                message.From.Add(new MailboxAddress("RegisztraciosApp", "krisztiangrosz83@gmail.com"));
-                message.To.Add(MailboxAddress.Parse(request.Email));
-                message.Subject = "Bejelentkezési kód";
-                message.Body = new TextPart("plain")
-                {
-                    Text = $"A bejelentkezési kódod: {code}. Érvényes 1 percig."
-                };
-
-                using var client = new SmtpClient();
-                await client.ConnectAsync("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-                await client.AuthenticateAsync("krisztiangrosz83@gmail.com", "lbsg ogdl xfre enrf ");
-                await client.SendAsync(message);
-                await client.DisconnectAsync(true);
-
-                _logger.LogInformation($"Login code sent to {request.Email}");
-
-                return Ok(new SendCodeResponseDto
-                {
-                    Success = true,
-                    Message = "Login code sent to email",
-                    ExpiresIn = 60
-                    // Code mezőt NE adj vissza élesben
-                });
+                user.Id,
+                user.Username
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error sending login code to {request.Email}");
-                return StatusCode(500, new { message = ex.Message, stack = ex.StackTrace });
-            }
+        });
+    }
+
+
+    [HttpPut("users/{id}/profile-image")]
+    public async Task<ActionResult> UpdateProfileImage(int id, IFormFile file)
+    {
+        var user = await _userRepository.GetByIdAsync(id);
+        if (user == null)
+            return NotFound(new { message = "Felhasználó nem található." });
+
+        if (file == null || file.Length == 0)
+            return BadRequest(new { message = "A feltöltött kép formátuma nem megfelelő." });
+
+        // Mappa létrehozása ha nem létezik
+        var uploadDir = Path.Combine("wwwroot", "profile-images");
+        if (!Directory.Exists(uploadDir))
+            Directory.CreateDirectory(uploadDir);
+
+        // Fájlnév generálás
+        var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+        var filePath = Path.Combine(uploadDir, fileName);
+
+        // Fájl mentése
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.CopyToAsync(stream);
         }
 
-        // -------------------------------
-        // LOGIN KÓD ELLENŐRZÉS
-        // -------------------------------
-        [HttpPost("verify-code")]
-        public async Task<ActionResult<AuthResponseDto>> VerifyCode([FromBody] VerifyCodeRequestDto request)
+        // Elérési út mentése az adatbázisba
+        user.ProfileImages = $"/profile-images/{fileName}";
+
+        await _userRepository.UpdateAsync(user);
+
+        return Ok(new
         {
-            if (!ModelState.IsValid)
-                return BadRequest(new { message = "Invalid data" });
-
-            try
+            message = "A profilkép sikeresen frissítve!",
+            updatedUser = new
             {
-                var isValidCode = await _codeService.ValidateCodeAsync(request.Email, request.Code);
-                if (!isValidCode)
-                    return BadRequest(new { message = "Invalid or expired code" });
-
-                var response = await _authService.LoginWithCodeAsync(request.Email);
-
-                _logger.LogInformation($"User {request.Email} logged in successfully with code");
-
-                return Ok(response);
+                user.Id,
+                user.Username,
+                user.ProfileImages
             }
-            catch (UnauthorizedAccessException ex)
-            {
-                return Unauthorized(new { message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Error verifying code for {request.Email}");
-                return StatusCode(500, new { message = "Server error occurred" });
-            }
-        }
+        });
+    }
 
-        // -------------------------------
-        // JWT TOKEN GENERÁLÁS
-        // -------------------------------
-        private string GenerateJwtToken(User user)
+    [HttpGet("users/me")]
+    [Authorize]
+    public async Task<ActionResult<UserReadDto>> GetCurrentUser()
+    {
+        var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
+        if (userIdClaim == null)
+            return Unauthorized(new { message = "Nem vagy bejelentkezve." });
+
+        if (!int.TryParse(userIdClaim.Value, out int currentUserId))
+            return Unauthorized(new { message = "Érvénytelen felhasználói azonosító." });
+
+        var userDetails = await _context.UserDetails
+                                        .Include(d => d.User)
+                                        .FirstOrDefaultAsync(d => d.UserId == currentUserId);
+
+        if (userDetails == null || userDetails.User == null)
+            return NotFound(new { message = "Felhasználó nem található." });
+
+        return Ok(new UserReadDto
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            Id = userDetails.User.Id,
+            Username = userDetails.User.Username,
+            Email = userDetails.Email,
+            ProfileImages = userDetails.User.ProfileImages,
+            CreatedAt = userDetails.CreatedAt  // <-- ide kerül a createdAt mező
+        });
+    }
 
-            var claims = new[]
+    [HttpPost("users/{id}/upload-profile-image")]
+    [Consumes("multipart/form-data")]
+    public async Task<IActionResult> UploadProfileImage([FromRoute] int id, [FromForm] UploadProfileImageDto dto)
+    {
+        var file = dto.File;
+
+        if (file == null || file.Length == 0)
+            return BadRequest(new { message = "Nincs feltöltött fájl." });
+
+        var extension = Path.GetExtension(file.FileName).ToLower();
+        if (extension != ".jpg" && extension != ".jpeg" && extension != ".png")
+            return BadRequest(new { message = "Csak JPG vagy PNG képeket lehet feltölteni." });
+
+        var user = await _userRepository.GetByIdAsync(id);
+        if (user == null)
+            return NotFound(new { message = "Felhasználó nem található." });
+
+        try
+        {
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/profiles");
+            if (!Directory.Exists(uploadsFolder))
+                Directory.CreateDirectory(uploadsFolder);
+
+            var fileName = $"user_{id}_{Guid.NewGuid()}{extension}";
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            await using var stream = new FileStream(filePath, FileMode.Create);
+            await file.CopyToAsync(stream);
+
+            user.ProfileImages = $"/images/profiles/{fileName}";
+            await _userRepository.UpdateAsync(user);
+
+            return Ok(new
             {
-                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
-                new Claim(ClaimTypes.Name, user.Username),
-                new Claim(ClaimTypes.Email, user.Email),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
-
-            var token = new JwtSecurityToken(
-                issuer: _configuration["Jwt:Issuer"],
-                audience: _configuration["Jwt:Audience"],
-                claims: claims,
-                expires: DateTime.UtcNow.AddHours(24),
-                signingCredentials: credentials
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+                message = "Profilkép sikeresen feltöltve!",
+                profileImageUrl = user.ProfileImages
+            });
         }
-
-        // -------------------------------
-        // GET ALL USERS
-        // -------------------------------
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserReadDto>>> GetUsers()
+        catch (Exception ex)
         {
-            var users = await _context.Users
-                .Select(u => new UserReadDto
-                {
-                    Id = u.Id,
-                    Username = u.Username,
-                    Email = u.Email
-                })
-                .ToListAsync();
-
-            return Ok(users);
-        }
-
-        // -------------------------------
-        // GET USER BY ID
-        // -------------------------------
-        [HttpGet("{id}")]
-        public async Task<ActionResult<UserReadDto>> GetUser(int id)
-        {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
-                return NotFound();
-
-            return new UserReadDto
-            {
-                Id = user.Id,
-                Username = user.Username,
-                Email = user.Email
-            };
-        }
-
-        // -------------------------------
-        // UPDATE USER
-        // -------------------------------
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, UserCreateDto dto)
-        {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
-                return NotFound();
-
-            var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
-
-            user.Username = dto.Username;
-            user.Email = dto.Email;
-            user.PasswordHash = passwordHash;
-
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        // -------------------------------
-        // DELETE USER
-        // -------------------------------
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
-        {
-            var user = await _context.Users.FindAsync(id);
-            if (user == null)
-                return NotFound();
-
-            _context.Users.Remove(user);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        // -------------------------------
-        // UPDATE ACTIVITY (JWT alapján)
-        // -------------------------------
-        [HttpPost("update-activity")]
-        [Authorize]
-        public async Task<ActionResult> UpdateActivity()
-        {
-            try
-            {
-                var email = User.FindFirst(ClaimTypes.Email)?.Value;
-                if (string.IsNullOrEmpty(email))
-                    return Unauthorized(new { message = "Invalid token" });
-
-                var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-                if (user != null)
-                {
-                    // Ha szeretnéd tárolni az aktivitást, hozzáadhatsz LastActivity mezőt
-                    // user.LastActivity = DateTime.UtcNow;
-                    await _context.SaveChangesAsync();
-                }
-
-                return Ok(new { message = "Activity updated successfully" });
-            }
-            catch
-            {
-                return StatusCode(500, new { message = "Server error occurred" });
-            }
+            _logger.LogError(ex, "Hiba történt a profilkép feltöltésekor.");
+            return StatusCode(500, new { message = "Hiba történt a profilkép feltöltésekor." });
         }
     }
 }

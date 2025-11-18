@@ -11,13 +11,12 @@ namespace RegisztracioTest.Model
         [MaxLength(50)]
         public string Username { get; set; } = string.Empty;
 
-        [Required]
-        public string PasswordHash { get; set; } = string.Empty;
-
-        [Required]
-        [EmailAddress]
-        public string Email { get; set; } = string.Empty;
+        [MaxLength(255)]
+        public string? ProfileImages { get; set; }
 
         public UserStats UserStats { get; set; }
+
+        // Navigáció a hitelesítéshez
+        public UserDetails Credential { get; set; }
     }
 }

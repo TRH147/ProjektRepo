@@ -10,7 +10,7 @@
 
         <ul class="list">
             <li><router-link to="/" @click.native="scrollToTop">Főoldal</router-link></li>
-            <li><router-link to="/update">Frissítések</router-link></li>
+            <li><router-link to="/update">Újdonságok</router-link></li>
             <li><router-link to="/statics">Statisztika</router-link></li>
             <li><router-link to="/forum">Fórum</router-link></li>
         </ul>

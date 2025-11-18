@@ -1,4 +1,10 @@
-wwwroot\index.html
 wwwroot\css\style.css
 wwwroot\img\picture.webp
+wwwroot\index.html
 wwwroot\js\index.js
+wwwroot\images\profiles\user_7_a937d26b-f231-4511-993e-a96abf2b10cd.png
+wwwroot\images\profiles\user_23_ba699ca0-fd2a-459e-8088-627bdefa9d81.png
+wwwroot\profile-images\f55d38fb-7f1d-496c-a1d2-93cfb917a238.png
+wwwroot\profile-images\8499d5dc-220e-4a2d-8829-9847dbc38514.png
+wwwroot\profile-images\a0ac0716-39d4-4677-8280-10295a18cf37.png
+wwwroot\profile-images\52daa3d2-172f-4b5f-9793-d7de6a36c91c.png

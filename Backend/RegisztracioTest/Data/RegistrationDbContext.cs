@@ -12,10 +12,18 @@ namespace RegisztracioTest.Data
 
         public DbSet<User> Users => Set<User>();
 
+        public DbSet<UserDetails> UserDetails { get; set; }
+
         public DbSet<LoginCode> LoginCodes { get; set; }
 
-        // ADD THIS — user stats table
+        public DbSet<PasswordResetCode> PasswordResetCodes { get; set; }
+
         public DbSet<UserStats> UserStats => Set<UserStats>();
+
+        public DbSet<FriendRequest> FriendRequests { get; set; } = null!;
+
+        // ADD Admin table
+        public DbSet<Admin> Admins { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,6 +34,16 @@ namespace RegisztracioTest.Data
                 .HasOne(u => u.UserStats)
                 .WithOne(s => s.User)
                 .HasForeignKey<UserStats>(s => s.Id);
+
+            // Seed default admin
+            modelBuilder.Entity<Admin>().HasData(
+                new Admin
+                {
+                    Id = 1,
+                    Username = "admin",
+                    Password = "admin123" // Teszteléshez, élesben hash-elni kell
+                }
+            );
         }
     }
 }
