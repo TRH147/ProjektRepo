@@ -1,0 +1,1033 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.39f1 (15ea7ed0b100) revision 1436286'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) 64bit Professional' Language: 'hu' Physical Memory: 16078 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Asus2026/Desktop/asdfghjkl/FPS Shooter
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58617
+-job-worker-count
+3
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: C:/Users/Asus2026/Desktop/asdfghjkl/FPS Shooter
+C:/Users/Asus2026/Desktop/asdfghjkl/FPS Shooter
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [2244]  Target information:
+
+Player connection [2244]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3952207932 [EditorId] 3952207932 [Version] 1048832 [Id] WindowsEditor(7,Asus-4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [2244]  * "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 3952207932 [EditorId] 3952207932 [Version] 1048832 [Id] WindowsEditor(7,Asus-4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [2244]  * "[IP] 192.168.1.68 [Port] 0 [Flags] 2 [Guid] 3952207932 [EditorId] 3952207932 [Version] 1048832 [Id] WindowsEditor(7,Asus-4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [2244] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [2244] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.39f1 (15ea7ed0b100)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Asus2026/Desktop/asdfghjkl/FPS Shooter/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) Iris(R) Xe Graphics (ID=0x9a49)
+    Vendor:   Intel
+    VRAM:     8039 MB
+    Driver:   31.0.101.4255
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.39f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.004868 seconds.
+- Loaded All Assemblies, in  0.520 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.549 seconds
+Domain Reload Profiling: 1067ms
+	BeginReloadAssembly (173ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (211ms)
+		LoadAssemblies (171ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (203ms)
+				TypeCache.ScanAssembly (182ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (550ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (508ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (115ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (221ms)
+			ProcessInitializeOnLoadMethodAttributes (91ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.084 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 3 plugins.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-combatmaster
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.177 seconds
+Domain Reload Profiling: 2256ms
+	BeginReloadAssembly (246ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (717ms)
+		LoadAssemblies (533ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (337ms)
+			TypeCache.Refresh (242ms)
+				TypeCache.ScanAssembly (223ms)
+			BuildScriptInfoCaches (72ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1178ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (959ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (167ms)
+			ProcessInitializeOnLoadAttributes (632ms)
+			ProcessInitializeOnLoadMethodAttributes (123ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 219 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6505 unused Assets / (5.4 MB). Loaded Objects now: 7232.
+Memory consumption went from 174.1 MB to 168.7 MB.
+Total: 16.007700 ms (FindLiveObjects: 1.062700 ms CreateObjectMapping: 1.316500 ms MarkObjects: 7.895800 ms  DeleteObjects: 5.730800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5580.778554 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/Barrel_06.prefab
+  artifactKey: Guid(696ebe381dc240e4ab56adf5b2147f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/Barrel_06.prefab using Guid(696ebe381dc240e4ab56adf5b2147f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a877dea06d3a23222c8f3783e42ab7') in 0.6765552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/ShootingTarget_02.prefab
+  artifactKey: Guid(4f70a889a1a01f444832ac8d8653ca31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/ShootingTarget_02.prefab using Guid(4f70a889a1a01f444832ac8d8653ca31) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2bfcbfbdd849a5ca0df8b8b69fe7c44f') in 0.0442164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/Wheel_02.prefab
+  artifactKey: Guid(f344f2596a7a80d4c9e419217d3cfc0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/Wheel_02.prefab using Guid(f344f2596a7a80d4c9e419217d3cfc0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d335dc0068528f14d5c3d9618db6cac') in 0.0264186 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 85
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/WoodenPlank_01.prefab
+  artifactKey: Guid(84bd9e2d41da1ac4784216826143e2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/WoodenPlank_01.prefab using Guid(84bd9e2d41da1ac4784216826143e2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c16d9b45e3fa3fa000de9b1fa04fa0f3') in 0.0376517 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/ShippingContainer_06.prefab
+  artifactKey: Guid(bc4a43e0c78344443b6835fcaaeec347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/ShippingContainer_06.prefab using Guid(bc4a43e0c78344443b6835fcaaeec347) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74c7a6ac50de915cdd536baf817d04cc') in 0.0384534 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 46
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/Wheel_03.prefab
+  artifactKey: Guid(ea7bb9a12455613428f0c73429bffa81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/Wheel_03.prefab using Guid(ea7bb9a12455613428f0c73429bffa81) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f7a5474ebc3e31e581745bb930dad13') in 0.0326328 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 73
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/Rack_03.prefab
+  artifactKey: Guid(2a0c8f19e7b27f145b5baf4d32ee1f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/Rack_03.prefab using Guid(2a0c8f19e7b27f145b5baf4d32ee1f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4a0822c3a35a7a43a951e65ca670d60') in 0.0305116 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 126
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/Pallet_07.prefab
+  artifactKey: Guid(cc4386083fd9b8b4eaf3fb236e5452b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/Pallet_07.prefab using Guid(cc4386083fd9b8b4eaf3fb236e5452b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18fe52053ee9ee5a66bf588ed3de92cc') in 0.0412202 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 60
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/PostBox_01.prefab
+  artifactKey: Guid(a4f3e3af3a1e7fc4bb3d414b3836ff3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/PostBox_01.prefab using Guid(a4f3e3af3a1e7fc4bb3d414b3836ff3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b2d775d4865bb5180da36c158b90195') in 0.0437513 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/WoodenPlank_04.prefab
+  artifactKey: Guid(de5456abd366f5d44a8032d43b89d71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/WoodenPlank_04.prefab using Guid(de5456abd366f5d44a8032d43b89d71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c62be25dc2d8c24fbb3c950f5c5b7ee') in 0.0400822 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LowPolyFPS4/Prefabs/Props/Light_04.prefab
+  artifactKey: Guid(f1e45201c61ba4644bf9c8fcd1390668) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS4/Prefabs/Props/Light_04.prefab using Guid(f1e45201c61ba4644bf9c8fcd1390668) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '518ece9f3b69584ebdadd66fa7dee4b7') in 5.9534347 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 163.986135 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Brick_02.prefab
+  artifactKey: Guid(3f36c804e48194945b1856357735b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Brick_02.prefab using Guid(3f36c804e48194945b1856357735b125) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8a1aee304161a3f02e081e6aad535a2') in 0.0203339 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Door_01.prefab
+  artifactKey: Guid(e6d85bcfff1849c4f8c1a78ad9a08aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Door_01.prefab using Guid(e6d85bcfff1849c4f8c1a78ad9a08aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd75c017b6181acb33b3a713b1246bcd8') in 0.0312014 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Stairs_02.prefab
+  artifactKey: Guid(cdeb0132fbb96b448a526916cba5c25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Stairs_02.prefab using Guid(cdeb0132fbb96b448a526916cba5c25c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '710183193c904b944630f7fe47f9c960') in 0.029226 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Wall_06.prefab
+  artifactKey: Guid(40bd0c185097d604488fa49772cec5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Wall_06.prefab using Guid(40bd0c185097d604488fa49772cec5c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e00154227705a26ed4b813c608016ed') in 0.0199842 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/WallPart_02.prefab
+  artifactKey: Guid(c356f7a275446fd48a4e84d29b52b17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/WallPart_02.prefab using Guid(c356f7a275446fd48a4e84d29b52b17e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f87b9e27e6ffcb8de3edb2555d4750d') in 0.0326169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Stairs_01.prefab
+  artifactKey: Guid(fea6abdbc5dd3f044b66e869b46f9fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Stairs_01.prefab using Guid(fea6abdbc5dd3f044b66e869b46f9fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b40d68006a10bf7dd2a54f70c72e305') in 0.029499 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Wall_04.prefab
+  artifactKey: Guid(1ffe183748fed4b49b31a458333a5351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Wall_04.prefab using Guid(1ffe183748fed4b49b31a458333a5351) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd66b31b92509d8fd8738e4cceeb337b7') in 0.026463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/CementC2_01.prefab
+  artifactKey: Guid(e99a8311ab17c234c8031e9422482d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/CementC2_01.prefab using Guid(e99a8311ab17c234c8031e9422482d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc0fccc5725e4fb3bf0f1b889d371010') in 0.0281535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Dye_02.prefab
+  artifactKey: Guid(9e6a6fa223ac9874b8d6639a676b5df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Dye_02.prefab using Guid(9e6a6fa223ac9874b8d6639a676b5df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bcbe23a8b4204f9d5e0c0c9f65a7361') in 0.0218262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/MetalTile_01.prefab
+  artifactKey: Guid(4f93999bbd962454093fbcc2e2b19563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/MetalTile_01.prefab using Guid(4f93999bbd962454093fbcc2e2b19563) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58a53da812ad7990b3e10c4cce6b03a7') in 0.0271103 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Pallet_01.prefab
+  artifactKey: Guid(25219b90cace9ac46ae6fe857281dcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Pallet_01.prefab using Guid(25219b90cace9ac46ae6fe857281dcf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b64577acd510a69738075efc810f1d8') in 0.0208235 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Sign_01.prefab
+  artifactKey: Guid(c883d7448329f7249a1b7baffa887688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Sign_01.prefab using Guid(c883d7448329f7249a1b7baffa887688) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '95b710eed98e33553f6c0f63b22bcfe1') in 0.0192007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/TowerCrane_02.prefab
+  artifactKey: Guid(ffcde40b005a42343a7b45e1812ccbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/TowerCrane_02.prefab using Guid(ffcde40b005a42343a7b45e1812ccbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1cd9f92f7e9ee69d8c61084ee5245224') in 0.0205876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_03.prefab
+  artifactKey: Guid(778d28de74b6e194095ce7ec96b5d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_03.prefab using Guid(778d28de74b6e194095ce7ec96b5d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22938e893563a6bd2ddac447bffbba73') in 0.0353585 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Scaffolding_01.prefab
+  artifactKey: Guid(66a875dfff116604b9313d01650a6605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Scaffolding_01.prefab using Guid(66a875dfff116604b9313d01650a6605) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8002997685c0b08ed98fd7ab0e04537f') in 0.025899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/SignA_01.prefab
+  artifactKey: Guid(358b93ad873d21848b4c8326901e741a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/SignA_01.prefab using Guid(358b93ad873d21848b4c8326901e741a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0832046344145258666f3a84eb47eea7') in 0.0286323 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/SignA_02.prefab
+  artifactKey: Guid(869f8c628442a1b44ad686788b27021c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/SignA_02.prefab using Guid(869f8c628442a1b44ad686788b27021c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '947db69716fd3f67b3760ecfe3c776f6') in 0.0282278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_01.prefab
+  artifactKey: Guid(f09b5de4d0de0a64a903c54c37560c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_01.prefab using Guid(f09b5de4d0de0a64a903c54c37560c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cfc871560636c0d3e2c1b54dd5a41e7') in 0.0401519 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/CementC1_02.prefab
+  artifactKey: Guid(b45a4d23ef09633429cee63029cdad90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/CementC1_02.prefab using Guid(b45a4d23ef09633429cee63029cdad90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8a2ad412515b8d89bc4e27566e1849b') in 0.0342127 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Wall_08.prefab
+  artifactKey: Guid(1918c587ecaefde42954aaa685768ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Wall_08.prefab using Guid(1918c587ecaefde42954aaa685768ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5391c21f6287759a1b26a2486236289') in 0.0252078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/ConstructionStairs_01.prefab
+  artifactKey: Guid(db0164ab91d9af24eb471a753f481bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/ConstructionStairs_01.prefab using Guid(db0164ab91d9af24eb471a753f481bb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f31c0aeca45855e144ba996e3c02efe7') in 0.0297604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_02.prefab
+  artifactKey: Guid(4651d4110d6f1314b92b4f62eb7db4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_02.prefab using Guid(4651d4110d6f1314b92b4f62eb7db4b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '39ae0bf468a86d65b4e1f29d5ecf3d31') in 0.0367622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Wall_07.prefab
+  artifactKey: Guid(6994f6428a1907349a13e9d2797df7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Wall_07.prefab using Guid(6994f6428a1907349a13e9d2797df7a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04894d4a6a3b3fc85eb5516f743a1773') in 0.0387987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Dye_03.prefab
+  artifactKey: Guid(0328cb7491f42074795750aef0c91b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Dye_03.prefab using Guid(0328cb7491f42074795750aef0c91b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ea84e5afc00b6171c5de55441f22ce69') in 0.0278802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Pipe_02.prefab
+  artifactKey: Guid(aea1eca509b09e74aab63ef3a4bf11b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Pipe_02.prefab using Guid(aea1eca509b09e74aab63ef3a4bf11b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0392950180a2e2b47eecc9999242a25f') in 0.0375268 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/SignB_02.prefab
+  artifactKey: Guid(434eeb2d6b26ed04dbb7b56abe918320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/SignB_02.prefab using Guid(434eeb2d6b26ed04dbb7b56abe918320) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d73461ea7b7858b9e76b6abca5d837e') in 0.0307267 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_01.prefab
+  artifactKey: Guid(1c0954f461688a347a8c9c6d5c96b554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_01.prefab using Guid(1c0954f461688a347a8c9c6d5c96b554) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2c1512e67bab4e9f6cfcb957e712dea') in 0.0402365 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_04.prefab
+  artifactKey: Guid(a5072f71fd55e894ea4450107f61ff6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_04.prefab using Guid(a5072f71fd55e894ea4450107f61ff6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '74087862f0dd31e3f838921f97917229') in 0.0418774 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/CementC1_03.prefab
+  artifactKey: Guid(8cd986fe93bf03c47bf4bbb7319d4878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/CementC1_03.prefab using Guid(8cd986fe93bf03c47bf4bbb7319d4878) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e131b0b34bd726a27cc664c06bebd88') in 0.0438023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Floor_02.prefab
+  artifactKey: Guid(111b5a257fbb750498a6e4346cbddd4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Floor_02.prefab using Guid(111b5a257fbb750498a6e4346cbddd4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa3776afdc05558ac7f33c9ce93b3d6a') in 0.0435697 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/CementC2_03.prefab
+  artifactKey: Guid(97dc4c56cf1a6de4f81c7d6df917ad0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/CementC2_03.prefab using Guid(97dc4c56cf1a6de4f81c7d6df917ad0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6244648ce9ae6301b191535173d2dc23') in 0.0331769 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Brush_02.prefab
+  artifactKey: Guid(e61f9a773191c99438d27cfe43c67ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Brush_02.prefab using Guid(e61f9a773191c99438d27cfe43c67ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '323bd76b51c31a1d0a10bdac10bf2b3b') in 0.0320698 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/ConstructionMat_02.prefab
+  artifactKey: Guid(ab2bd28e968d0cf49921226b68b6026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/ConstructionMat_02.prefab using Guid(ab2bd28e968d0cf49921226b68b6026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99389a829187e463903a47917f960203') in 0.0337163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_05.prefab
+  artifactKey: Guid(9c2652c2a6823ff48be16db2a83a0a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_05.prefab using Guid(9c2652c2a6823ff48be16db2a83a0a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '799b6e278f037cb2a09ee4d30601acd5') in 0.0324097 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_11.prefab
+  artifactKey: Guid(0c6e68465d2e69e43ae68d6930f9ee2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_11.prefab using Guid(0c6e68465d2e69e43ae68d6930f9ee2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f3bbb9e3321735a058926ed0c2d7fd85') in 0.0506884 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/ConstructionMat_01.prefab
+  artifactKey: Guid(4488105d3d6fd3346bafc0782580b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/ConstructionMat_01.prefab using Guid(4488105d3d6fd3346bafc0782580b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd18f8fd5513f18f2c9024934089fcb67') in 0.0260955 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Floor_01.prefab
+  artifactKey: Guid(00fcb1fc698b3c14e98fb54d898ee9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Floor_01.prefab using Guid(00fcb1fc698b3c14e98fb54d898ee9e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f526298ae264e1d52f3151ca85115fea') in 0.0432495 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Light_01.prefab
+  artifactKey: Guid(36a9271952c3e2046a5a581252d5f54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Light_01.prefab using Guid(36a9271952c3e2046a5a581252d5f54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '011221f0f7ff36c701561a943baf4710') in 0.0328871 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Dye_01.prefab
+  artifactKey: Guid(1ab9fa02db28e114cbfaae89ca5ff3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Dye_01.prefab using Guid(1ab9fa02db28e114cbfaae89ca5ff3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c3723b854113f35941e46321c35a22cc') in 0.0262117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Light_02.prefab
+  artifactKey: Guid(de5aecc31fe91e64c9fa64b397374aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Light_02.prefab using Guid(de5aecc31fe91e64c9fa64b397374aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae877d57593ac37f7d1892c10cae0f6a') in 0.0329622 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Pipe_01.prefab
+  artifactKey: Guid(6e3054f4acefc4c48ac982cb2b1f4fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Pipe_01.prefab using Guid(6e3054f4acefc4c48ac982cb2b1f4fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2dd9a4e2940627346b78acc877ae8b8') in 0.0326802 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WC_01.prefab
+  artifactKey: Guid(60383a68de32c6342a37eb0de4b0f5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WC_01.prefab using Guid(60383a68de32c6342a37eb0de4b0f5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0eb61039ea5f88447ac9e12c999a6979') in 0.0281491 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Generator_01.prefab
+  artifactKey: Guid(c2263154f6d1f234db2e642ca317a8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Generator_01.prefab using Guid(c2263154f6d1f234db2e642ca317a8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12c44994367c56faaa8b98a6525d2115') in 0.0276256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_10.prefab
+  artifactKey: Guid(2cac53d1a1de2444396690fe8503fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_10.prefab using Guid(2cac53d1a1de2444396690fe8503fe99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96fc81f61ebd81972ae595afead77594') in 0.0366293 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Box_01.prefab
+  artifactKey: Guid(35ee063abd1dee945990a641ae9bbee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Box_01.prefab using Guid(35ee063abd1dee945990a641ae9bbee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f696d24049aab9b04a1876969d3ef19') in 0.02252 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/WallCorner_02.prefab
+  artifactKey: Guid(881c2551ac61b2649919487cf81db0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/WallCorner_02.prefab using Guid(881c2551ac61b2649919487cf81db0f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f28a981ca23f954634e6c8d35b9d02ba') in 0.04114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_06.prefab
+  artifactKey: Guid(9ab03b362f917b34286562b1c6ef5cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_06.prefab using Guid(9ab03b362f917b34286562b1c6ef5cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5325b9c61860472f81f25807f6faf64') in 0.0387453 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Brush_01.prefab
+  artifactKey: Guid(1a11045add69d1044a048c93fb7ca72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Brush_01.prefab using Guid(1a11045add69d1044a048c93fb7ca72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c9b9d33ab359be68c9aa37ad4c3a93a0') in 0.0338859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/ConstructionMat_03.prefab
+  artifactKey: Guid(299a3c622605b2847bbf47413914e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/ConstructionMat_03.prefab using Guid(299a3c622605b2847bbf47413914e554) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b874a8f343b1c3fd0a082eb5efb81dbe') in 0.0234106 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 67
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_03.prefab
+  artifactKey: Guid(6f1250e6be32e9c48b1265c3cd45a783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WoodenPlank_03.prefab using Guid(6f1250e6be32e9c48b1265c3cd45a783) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70a6fdc2a68a2304f675825f76511589') in 0.0356889 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Scaffolding_03.prefab
+  artifactKey: Guid(7f3ddce9ae1750f47bb68449d63fa013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Scaffolding_03.prefab using Guid(7f3ddce9ae1750f47bb68449d63fa013) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '24884de4bdc704fa2d5903a986dee956') in 0.0252903 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/CableReel_02.prefab
+  artifactKey: Guid(7aa7c96599cc0df41a8854bdd319ee2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/CableReel_02.prefab using Guid(7aa7c96599cc0df41a8854bdd319ee2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7dca08ce3d21768119706d9e3736cef1') in 0.0278308 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/Scaffolding_02.prefab
+  artifactKey: Guid(66e7c15c98c662348a32b922fee999ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/Scaffolding_02.prefab using Guid(66e7c15c98c662348a32b922fee999ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd217c1dac7b0839cadb91d485bf17840') in 0.0245023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/WallDecor_09.prefab
+  artifactKey: Guid(35f03d477ca4676478e3fcdda7842d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/WallDecor_09.prefab using Guid(35f03d477ca4676478e3fcdda7842d7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f7faab2dc8f2cda3fb9563a0dda6b6f') in 0.036707 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Floor_05.prefab
+  artifactKey: Guid(06ba53b706a815846a6a4d960dff2f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Floor_05.prefab using Guid(06ba53b706a815846a6a4d960dff2f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'acb2453cc9d22f4925589ae5f84bab8b') in 0.0375839 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/SignB_01.prefab
+  artifactKey: Guid(18244009a017b42488c9499f03872f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/SignB_01.prefab using Guid(18244009a017b42488c9499f03872f0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cb18d290c11bdfaec1929a5f59ec3df7') in 0.0263658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Walls/Floor_03.prefab
+  artifactKey: Guid(232cc8f84bcaa1844959b0ed2ce8feb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Walls/Floor_03.prefab using Guid(232cc8f84bcaa1844959b0ed2ce8feb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ad6e1a2bc725282d2da237c83b40863') in 0.033321 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/LowPolyFPS6/Prefabs/Props/CableReel_01.prefab
+  artifactKey: Guid(d392e62126ffbff42803aa4ad9cd4860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS6/Prefabs/Props/CableReel_01.prefab using Guid(d392e62126ffbff42803aa4ad9cd4860) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2cc4183caf1efb0fe4054412b137876') in 0.0232046 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.605383 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Railway_02.prefab
+  artifactKey: Guid(da8291feb23f7a54c9fb4e05a6468c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Railway_02.prefab using Guid(da8291feb23f7a54c9fb4e05a6468c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2eadc95a87b769c78a0bfebd4a8587d') in 0.0290409 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_01_C1.prefab
+  artifactKey: Guid(6b5f6fcffdb12cc4bb2a5a4320e27fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_01_C1.prefab using Guid(6b5f6fcffdb12cc4bb2a5a4320e27fc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb99ed582ec9adbb97e67bbb92e24eb6') in 0.028479 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_04_C1.prefab
+  artifactKey: Guid(1d71d34d9e82cc040a326c5362c0e904) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_04_C1.prefab using Guid(1d71d34d9e82cc040a326c5362c0e904) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86f93fd62ec866a90b5f8d16bdb39394') in 0.0230301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 180
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_07_C2.prefab
+  artifactKey: Guid(cde775f41644b794d99db8f8cf80e6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_07_C2.prefab using Guid(cde775f41644b794d99db8f8cf80e6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '280c41b34ecec4a966b8c1576cff9724') in 0.0286494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_08_C1.prefab
+  artifactKey: Guid(f80f10e681625d948b42cea12741f941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_08_C1.prefab using Guid(f80f10e681625d948b42cea12741f941) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f310b1de70fe7b620e72cacc53ae441') in 0.0303916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_05_C2.prefab
+  artifactKey: Guid(3019c795df44f724dacf718db8ef1c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_05_C2.prefab using Guid(3019c795df44f724dacf718db8ef1c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16c5978a8f7c1a69ab20a2700aff1c02') in 0.0392791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_06_C1.prefab
+  artifactKey: Guid(d7ad4bcc8951b264391d9ff9eb89fced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_06_C1.prefab using Guid(d7ad4bcc8951b264391d9ff9eb89fced) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9743473b5d8fc546ed9f50bcd4d8e2ce') in 0.0264881 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_05_C1.prefab
+  artifactKey: Guid(a0dbd6ca005a75c44bbdf149a2f319d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_05_C1.prefab using Guid(a0dbd6ca005a75c44bbdf149a2f319d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '83aabdbd3409284f8c61983349a0bfe2') in 0.0278151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/LowPolyFPS5/Prefabs/Trains/Train_03_C1.prefab
+  artifactKey: Guid(0077c287910d10440a6536169e1a9852) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS5/Prefabs/Trains/Train_03_C1.prefab using Guid(0077c287910d10440a6536169e1a9852) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3040427f0878ba38bbaa856f2161a820') in 0.0289112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.830993 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Bag_02.prefab
+  artifactKey: Guid(82321b2c38ff4684c87c76d05a4eef7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Bag_02.prefab using Guid(82321b2c38ff4684c87c76d05a4eef7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6e0f7e84bfd9589b3fbd63b6db21659') in 0.0377385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Block_02.prefab
+  artifactKey: Guid(a60d4c9bf7ffa1d408a525da9c3124c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Block_02.prefab using Guid(a60d4c9bf7ffa1d408a525da9c3124c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dff7a3af7ee8a2f1a3d1a8525c38a3de') in 0.0284995 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Box_02.prefab
+  artifactKey: Guid(67902656a6f46fe499c581a9aee62043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Box_02.prefab using Guid(67902656a6f46fe499c581a9aee62043) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c637fb9d8ede18cdaf13534bf793606c') in 0.030118 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Flag_02.prefab
+  artifactKey: Guid(777acd63fac18014abbb348c87e0c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Flag_02.prefab using Guid(777acd63fac18014abbb348c87e0c9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '58f7bacc3a5e281011949d6487c63ed3') in 0.0276288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/FlowerBed_01.prefab
+  artifactKey: Guid(756f59e47550d3842ba3d35013cc49da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/FlowerBed_01.prefab using Guid(756f59e47550d3842ba3d35013cc49da) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d7703995361406651ed509882965059') in 0.0259899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Food_06.prefab
+  artifactKey: Guid(d0d3c6d79d747ce4d9d41e4d9885baa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Food_06.prefab using Guid(d0d3c6d79d747ce4d9d41e4d9885baa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb356bfb5a6551b299a90f740221b461') in 0.0272081 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Food_02.prefab
+  artifactKey: Guid(a7b6188f16fbe1f48baeca6c514627ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Food_02.prefab using Guid(a7b6188f16fbe1f48baeca6c514627ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ed96f4aa9c2294f0929fa4900b5d63a9') in 0.0269343 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Jug_03.prefab
+  artifactKey: Guid(4a312fc04edc6584bbbcfcca6e2bf602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Jug_03.prefab using Guid(4a312fc04edc6584bbbcfcca6e2bf602) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7562ad19e16554aad4f13313ff472470') in 0.025427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Pot_01.prefab
+  artifactKey: Guid(caa0a4aaa90592f4a890163086df332c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Pot_01.prefab using Guid(caa0a4aaa90592f4a890163086df332c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5b47c716b5786e74fbdfbd5cee63f67') in 0.0259342 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Tile_01.prefab
+  artifactKey: Guid(6859020db0f866d438492978f4bd54b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Tile_01.prefab using Guid(6859020db0f866d438492978f4bd54b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5f4c304226737a1351338f1a0770e5a') in 0.0344761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/PowerLines_01.prefab
+  artifactKey: Guid(481d7cbb47ef3be49b0a375845ee428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/PowerLines_01.prefab using Guid(481d7cbb47ef3be49b0a375845ee428c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd89c127c1c98f8ab2d582da19076b918') in 0.0446507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Food_01.prefab
+  artifactKey: Guid(0d9e913c5971afb4ba173b515397da45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Food_01.prefab using Guid(0d9e913c5971afb4ba173b515397da45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f827a4fa2c8182db01b3639bde82328') in 0.0368828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Nature/Hill_02.prefab
+  artifactKey: Guid(50412e7e1173d034b9ab65bbc71a0d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Nature/Hill_02.prefab using Guid(50412e7e1173d034b9ab65bbc71a0d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '96550568410f45173f36f1fdab01af48') in 0.0298807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Plate_03.prefab
+  artifactKey: Guid(9bfffeed33f2ab043ad67f85c41e7ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Plate_03.prefab using Guid(9bfffeed33f2ab043ad67f85c41e7ce1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d2fc73c2518d72c1b522dd0b5fe6ee5') in 0.0295726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Nature/Rock_01.prefab
+  artifactKey: Guid(965606c2db3574d478b9dd0539d2839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Nature/Rock_01.prefab using Guid(965606c2db3574d478b9dd0539d2839b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4191e43ea57e29b60352af2083571940') in 0.0408032 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Tile_03.prefab
+  artifactKey: Guid(7736e1843598de34ebb7de2852dca7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Tile_03.prefab using Guid(7736e1843598de34ebb7de2852dca7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2e67b6975732e32f4d1fc345ae58a62c') in 0.0450938 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Scroll_01.prefab
+  artifactKey: Guid(7fd98560f503a1742b8b727dff826004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Scroll_01.prefab using Guid(7fd98560f503a1742b8b727dff826004) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a7088d6846284cdb5916a5204fe9a07') in 0.0552794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Table_01.prefab
+  artifactKey: Guid(ec8f5bfe937ca9f4b8d30bb3ab37a91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Table_01.prefab using Guid(ec8f5bfe937ca9f4b8d30bb3ab37a91d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35bba4a16622da25283eea31f222c723') in 0.0431674 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Nature/Hill_04.prefab
+  artifactKey: Guid(d414a165e246591469bb7b9edd7c17b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Nature/Hill_04.prefab using Guid(d414a165e246591469bb7b9edd7c17b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15a9499b8ef42fa2fa9c15d1dfdf2b02') in 0.042738 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Nature/Plant_04.prefab
+  artifactKey: Guid(cfab2a2bb08fad64d8b18482372438bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Nature/Plant_04.prefab using Guid(cfab2a2bb08fad64d8b18482372438bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '230a40c102398b4384412d3837d9bcce') in 0.0395503 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Jug_01.prefab
+  artifactKey: Guid(3798c6a0257347842ab6668a62046920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Jug_01.prefab using Guid(3798c6a0257347842ab6668a62046920) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0eeed9e7708fc4ceb73fe0574b7477cf') in 0.0531037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Desk_03.prefab
+  artifactKey: Guid(0f56f9e731b01db4b8e7b0a565c99a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Desk_03.prefab using Guid(0f56f9e731b01db4b8e7b0a565c99a18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77538492ed708659f81ae927ae75cc5e') in 0.0420136 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Nature/PalmTree_01.prefab
+  artifactKey: Guid(27273ef8358a1fe40a36321723e4f77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Nature/PalmTree_01.prefab using Guid(27273ef8358a1fe40a36321723e4f77d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b31ae43c8cc54c4852f80c03a32b0371') in 0.0513095 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Pallet_02.prefab
+  artifactKey: Guid(488112248d8f92a43801cdb7a3bf49e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Pallet_02.prefab using Guid(488112248d8f92a43801cdb7a3bf49e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b706f9f25ee8dd9deb4a65cc0e9abd7') in 0.0438767 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Props/Tile_02.prefab
+  artifactKey: Guid(e449ee857113d68468c8619a3c2396ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Props/Tile_02.prefab using Guid(e449ee857113d68468c8619a3c2396ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77819449c3d90d17a7631f44d87da64b') in 0.0403772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyFPS2/Prefabs/Nature/Plant_01.prefab
+  artifactKey: Guid(312b7683a6c12384a8611de6770282ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyFPS2/Prefabs/Nature/Plant_01.prefab using Guid(312b7683a6c12384a8611de6770282ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b5edf1355b1c36491e14861806320102') in 0.0448067 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
