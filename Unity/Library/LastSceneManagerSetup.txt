@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/Bananadev MFPS Pack v2/Scenes/DesertMap.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
