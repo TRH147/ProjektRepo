@@ -1,0 +1,35 @@
+[nix]
+channel = "stable-25_05"
+packages = ["dotnet-sdk"]
+
+run = "dotnet run --project RegisztracioTest.csproj"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Run .NET App"
+
+[[workflows.workflow]]
+name = "Run .NET App"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "dotnet run"
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[agent]
+expertMode = true
+
+[[ports]]
+localPort = 7030
+externalPort = 80
