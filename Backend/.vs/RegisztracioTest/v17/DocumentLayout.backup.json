@@ -1,0 +1,581 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\iservices\\iuserstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\iservices\\iuserstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\iservices\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\iservices\\ithreadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\iservices\\ithreadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\iservices\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\iservices\\ipostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\iservices\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\userstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\userstatsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\threadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\threadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\passwordresetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\passwordresetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\expiredcodecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\expiredcodecleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\codeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\codeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\model\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:model\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\model\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:model\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\model\\friendrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:model\\friendrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:model\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\dtos\\userdto\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:dtos\\userdto\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\dtos\\userdto\\userloginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:dtos\\userdto\\userloginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\dtos\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:dtos\\responses\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\dtos\\responses\\postresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:dtos\\responses\\postresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\dtos\\responses\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:dtos\\responses\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\dtos\\authdto\\sendcoderesponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:dtos\\authdto\\sendcoderesponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\data\\registrationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:data\\registrationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\userstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\userstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\threadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\threadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\logincodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\logincodecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\friendrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\friendrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\adminlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|c:\\users\\asus2026\\desktop\\registrationdbzip\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72D7214D-698D-6C3F-FA51-0A6260CBF3CF}|RegisztracioTest.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAAAMYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:20:35.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserStatsService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IUserStatsService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IUserStatsService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IUserStatsService.cs",
+              "RelativeToolTip": "Services\\IServices\\IUserStatsService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:19:51.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IUserService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IUserService.cs",
+              "RelativeToolTip": "Services\\IServices\\IUserService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAzwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:19:35.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IThreadService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IThreadService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IThreadService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IThreadService.cs",
+              "RelativeToolTip": "Services\\IServices\\IThreadService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:19:31.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPostService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IPostService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IPostService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IPostService.cs",
+              "RelativeToolTip": "Services\\IServices\\IPostService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:19:15.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IServices\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\IServices\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IServices\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:19:07.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserStatsService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\UserStatsService.cs",
+              "RelativeDocumentMoniker": "Services\\UserStatsService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\UserStatsService.cs",
+              "RelativeToolTip": "Services\\UserStatsService.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAowKkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:18:36.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AgIAAIUCAAAAAAAAAAAowJgCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:09:39.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThreadService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\ThreadService.cs",
+              "RelativeDocumentMoniker": "Services\\ThreadService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\ThreadService.cs",
+              "RelativeToolTip": "Services\\ThreadService.cs",
+              "ViewState": "AgIAAEwBAAAAAAAAAAAowF0BAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:08:45.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PostService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\PostService.cs",
+              "RelativeDocumentMoniker": "Services\\PostService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\PostService.cs",
+              "RelativeToolTip": "Services\\PostService.cs",
+              "ViewState": "AgIAAIUBAAAAAAAAAAAowJkBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:08:06.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PasswordResetService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\PasswordResetService.cs",
+              "RelativeDocumentMoniker": "Services\\PasswordResetService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\PasswordResetService.cs",
+              "RelativeToolTip": "Services\\PasswordResetService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowFAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:07:47.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExpiredCodeCleanupService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\ExpiredCodeCleanupService.cs",
+              "RelativeDocumentMoniker": "Services\\ExpiredCodeCleanupService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\ExpiredCodeCleanupService.cs",
+              "RelativeToolTip": "Services\\ExpiredCodeCleanupService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA2wCgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:07:33.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CodeService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\CodeService.cs",
+              "RelativeDocumentMoniker": "Services\\CodeService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\CodeService.cs",
+              "RelativeToolTip": "Services\\CodeService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAcwGAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:07:11.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA6wDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:06:31.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\UserDetails.cs",
+              "RelativeDocumentMoniker": "Model\\UserDetails.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\UserDetails.cs",
+              "RelativeToolTip": "Model\\UserDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:06:22.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Model\\User.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\User.cs",
+              "RelativeToolTip": "Model\\User.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:06:18.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\Post.cs",
+              "RelativeDocumentMoniker": "Model\\Post.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\Post.cs",
+              "RelativeToolTip": "Model\\Post.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA2wBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:06:08.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FriendRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\FriendRequest.cs",
+              "RelativeDocumentMoniker": "Model\\FriendRequest.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\FriendRequest.cs",
+              "RelativeToolTip": "Model\\FriendRequest.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:05:58.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\Category.cs",
+              "RelativeDocumentMoniker": "Model\\Category.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Model\\Category.cs",
+              "RelativeToolTip": "Model\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:05:53.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\UserDto\\UserReadDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\UserDto\\UserReadDto.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\UserDto\\UserReadDto.cs",
+              "RelativeToolTip": "Dtos\\UserDto\\UserReadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:05:40.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserLoginResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\UserDto\\UserLoginResponseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\UserDto\\UserLoginResponseDto.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\UserDto\\UserLoginResponseDto.cs",
+              "RelativeToolTip": "Dtos\\UserDto\\UserLoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:05:37.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\Responses\\UserResponse.cs",
+              "RelativeDocumentMoniker": "Dtos\\Responses\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\Responses\\UserResponse.cs",
+              "RelativeToolTip": "Dtos\\Responses\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:05:15.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PostResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\Responses\\PostResponse.cs",
+              "RelativeDocumentMoniker": "Dtos\\Responses\\PostResponse.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\Responses\\PostResponse.cs",
+              "RelativeToolTip": "Dtos\\Responses\\PostResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:05:07.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CategoryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\Responses\\CategoryResponse.cs",
+              "RelativeDocumentMoniker": "Dtos\\Responses\\CategoryResponse.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\Responses\\CategoryResponse.cs",
+              "RelativeToolTip": "Dtos\\Responses\\CategoryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:04:58.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SendCodeResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\AuthDto\\SendCodeResponseDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\AuthDto\\SendCodeResponseDto.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Dtos\\AuthDto\\SendCodeResponseDto.cs",
+              "RelativeToolTip": "Dtos\\AuthDto\\SendCodeResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:04:38.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RegistrationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Data\\RegistrationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\RegistrationDbContext.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Data\\RegistrationDbContext.cs",
+              "RelativeToolTip": "Data\\RegistrationDbContext.cs",
+              "ViewState": "AgIAAAEBAAAAAAAAAADwvxYBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T12:00:12.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserStatsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\UserStatsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserStatsController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\UserStatsController.cs",
+              "RelativeToolTip": "Controllers\\UserStatsController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:59:52.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAGoBAAAAAAAAAAAmwHMBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:58:35.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ThreadsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\ThreadsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ThreadsController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\ThreadsController.cs",
+              "RelativeToolTip": "Controllers\\ThreadsController.cs",
+              "ViewState": "AgIAAA0DAAAAAAAAAAAqwBoDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:56:28.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginCodeController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\LoginCodeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginCodeController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\LoginCodeController.cs",
+              "RelativeToolTip": "Controllers\\LoginCodeController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:56:09.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FriendRequestController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\FriendRequestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FriendRequestController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\FriendRequestController.cs",
+              "RelativeToolTip": "Controllers\\FriendRequestController.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAwwNUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:55:43.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AdminLoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\AdminLoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminLoginController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\AdminLoginController.cs",
+              "RelativeToolTip": "Controllers\\AdminLoginController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:55:32.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Asus2026\\Desktop\\RegistrationDbzip\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T11:55:17.933Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
