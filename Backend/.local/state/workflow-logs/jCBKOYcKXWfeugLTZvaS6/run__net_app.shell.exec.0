@@ -1,0 +1,734 @@
+[?1h=
+Welcome to .NET 8.0!
+---------------------
+SDK Version: 8.0.412
+
+Telemetry
+---------
+The .NET tools collect usage data in order to help us improve your experience. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, view the instructions: https://aka.ms/dotnet-https-linux
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+[39;49m[93mAn issue was encountered verifying workloads. For more information, run "dotnet workload update".[39;49m
+Building...
+[?1h=Creating lowercase tables...
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (155ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+              FROM information_schema.tables
+              WHERE table_type = 'BASE TABLE' AND table_schema = 'defaultdb'
+✅ Lowercase tables created successfully!
+ℹ️ Column posts.IsEdited already exists, skipping.
+ℹ️ Column posts.IsPinned already exists, skipping.
+ℹ️ Column posts.VoteScore already exists, skipping.
+ℹ️ Column posts.ParentPostId already exists, skipping.
+ℹ️ Column posts.UpdatedAt already exists, skipping.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (154ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM `users` AS `u`)
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (139ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM `categories` AS `c`)
+✅ Seed data: Users=True, Categories=True
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[62]
+      User profile is available. Using '/home/runner/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[58]
+      Creating key {7efb8542-3a80-42dd-a7f9-157abaacb6d2} with creation date 2026-03-19 09:29:52Z, activation date 2026-03-19 09:29:52Z, and expiration date 2026-06-17 09:29:52Z.
+[40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+      No XML encryptor configured. Key {7efb8542-3a80-42dd-a7f9-157abaacb6d2} may be persisted to storage in unencrypted form.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository[39]
+      Writing data to file '/home/runner/.aspnet/DataProtection-Keys/key-7efb8542-3a80-42dd-a7f9-157abaacb6d2.xml'.
+[40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.Server.Kestrel[0]
+      Overriding address(es) 'http://localhost:5152'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://[::]:7030
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /home/runner/workspace
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/ - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/ - 404 0 - 68.2105ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[16]
+      Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/, Response status code: 404
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - application/json 45
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(RegisztracioTest.Dtos.UserDto.UserLoginDto) on controller RegisztracioTest.Controllers.UsersController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (171ms) [Parameters=[@__request_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      WHERE `u`.`Username` = @__request_Username_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (405ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType18`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType19`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest) in 3628.1669ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - 200 - application/json;+charset=utf-8 3682.3082ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - application/json 45
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(RegisztracioTest.Dtos.UserDto.UserLoginDto) on controller RegisztracioTest.Controllers.UsersController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (140ms) [Parameters=[@__request_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      WHERE `u`.`Username` = @__request_Username_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (140ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType18`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType19`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest) in 1045.7955ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - 200 - application/json;+charset=utf-8 1052.3606ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - application/json 45
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(RegisztracioTest.Dtos.UserDto.UserLoginDto) on controller RegisztracioTest.Controllers.UsersController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (139ms) [Parameters=[@__request_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      WHERE `u`.`Username` = @__request_Username_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (140ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType18`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType19`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest) in 999.4502ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - 200 - application/json;+charset=utf-8 1000.3147ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/register - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/register - 204 - - 12.4183ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/register - application/json 77
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.UsersController.Register (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Register", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(RegisztracioTest.Dtos.UserDto.UserCreateDto) on controller RegisztracioTest.Controllers.UsersController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__request_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM `users` AS `u`
+          WHERE `u`.`Username` = @__request_Username_0)
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__request_Email_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM `userdetails` AS `u`
+          WHERE `u`.`Email` = @__request_Email_0)
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (163ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 500), @p2='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `users` (`LastActive`, `ProfileImages`, `Username`)
+      VALUES (@p0, @p1, @p2);
+      SELECT `Id`
+      FROM `users`
+      WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@p3='?' (DbType = DateTime), @p4='?' (Size = 100), @p5='?' (Size = 255), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `userdetails` (`CreatedAt`, `Email`, `PasswordHash`, `UserId`)
+      VALUES (@p3, @p4, @p5, @p6);
+      SELECT `Id`
+      FROM `userdetails`
+      WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+      
+      INSERT INTO `userstats` (`Id`, `Death`, `Kills`, `Score`)
+      VALUES (@p7, @p8, @p9, @p10);
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType17`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[RegisztracioTest.Dtos.UserDto.UserReadDto, RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.UsersController.Register (RegisztracioTest) in 3831.1448ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.UsersController.Register (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/register - 200 - application/json;+charset=utf-8 3838.7475ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/forgot - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/forgot - 204 - - 0.3819ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/forgot - application/json 33
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.PasswordController.ForgotPassword (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "ForgotPassword", controller = "Password"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(RegisztracioTest.Dtos.ForgotPasswordRequestDto.ForgotPasswordRequestDto) on controller RegisztracioTest.Controllers.PasswordController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (143ms) [Parameters=[@p0='?' (Size = 10), @p1='?' (Size = 100), @p2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO `passwordresetcodes` (`Code`, `Email`, `Expiration`)
+      VALUES (@p0, @p1, @p2);
+      SELECT `Id`
+      FROM `passwordresetcodes`
+      WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.PasswordController.ForgotPassword (RegisztracioTest) in 1512.0138ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.PasswordController.ForgotPassword (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/forgot - 200 - application/json;+charset=utf-8 1519.8253ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/reset - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/reset - 204 - - 0.2521ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/reset - application/json 46
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.PasswordController.ResetPassword (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "ResetPassword", controller = "Password"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(RegisztracioTest.Dtos.ResetPasswordDto.ResetPasswordDto) on controller RegisztracioTest.Controllers.PasswordController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__code_0='?' (Size = 10)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`Code`, `p`.`Email`, `p`.`Expiration`
+      FROM `passwordresetcodes` AS `p`
+      WHERE (`p`.`Code` = @__code_0) AND (`p`.`Expiration` > UTC_TIMESTAMP())
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (146ms) [Parameters=[@__searchTerm_0='?' (Size = 50), @__searchTerm_0_1='?' (Size = 100), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`Username`, CASE
+          WHEN `u0`.`Id` IS NOT NULL THEN `u0`.`Email`
+          ELSE ''
+      END AS `Email`, `u`.`ProfileImages`, CASE
+          WHEN `u0`.`Id` IS NOT NULL THEN `u0`.`CreatedAt`
+          ELSE '0001-01-01 00:00:00.000000'
+      END AS `CreatedAt`, `u`.`LastActive`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      WHERE ((@__searchTerm_0 LIKE '') OR (LOCATE(@__searchTerm_0, `u`.`Username`) > 0)) OR (`u0`.`Id` IS NOT NULL AND ((@__searchTerm_0_1 LIKE '') OR (LOCATE(@__searchTerm_0_1, `u0`.`Email`) > 0)))
+      ORDER BY `u`.`Username`
+      LIMIT @__p_2 OFFSET @__p_1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`PasswordHash`, `u`.`UserId`
+      FROM `userdetails` AS `u`
+      WHERE `u`.`UserId` = @__user_Id_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (145ms) [Parameters=[@p0='?' (DbType = Int32), @p5='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = 100), @p3='?' (Size = 255), @p4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      DELETE FROM `passwordresetcodes`
+      WHERE `Id` = @p0;
+      UPDATE `userdetails` SET `CreatedAt` = @p1, `Email` = @p2, `PasswordHash` = @p3, `UserId` = @p4
+      WHERE `Id` = @p5;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.PasswordController.ResetPassword (RegisztracioTest) in 2424.1876ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.PasswordController.ResetPassword (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Password/reset - 200 - application/json;+charset=utf-8 2428.8680ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - 204 - - 0.3196ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - application/json 42
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminLoginController.AdminLogin (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "AdminLogin", controller = "AdminLogin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RegisztracioTest.Dtos.AuthDto.AuthResponseDto]] AdminLogin(RegisztracioTest.Dtos.AdminDto.AdminLoginDto) on controller RegisztracioTest.Controllers.AdminLoginController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__loginDto_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT `a`.`Id`, `a`.`Password`, `a`.`Username`
+      FROM `admins` AS `a`
+      WHERE `a`.`Username` = @__loginDto_Username_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'RegisztracioTest.Dtos.AuthDto.AuthResponseDto'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminLoginController.AdminLogin (RegisztracioTest) in 445.5358ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminLoginController.AdminLogin (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - 200 - application/json;+charset=utf-8 451.1325ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - 204 - - 1.9569ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`
+      FROM `users` AS `u`
+      WHERE `u`.`Id` = @__p_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+✅ Updated LastActive for user System to 3/19/2026 10:21:31 AM
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminController.GetAllUsers (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAllUsers", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RegisztracioTest.Dtos.UserDto.UserReadDto]]] GetAllUsers() on controller RegisztracioTest.Controllers.AdminController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`Username`, CASE
+          WHEN `u0`.`Id` IS NOT NULL THEN `u0`.`Email`
+          ELSE ''
+      END AS `Email`, `u`.`ProfileImages`, CASE
+          WHEN `u0`.`Id` IS NOT NULL THEN `u0`.`CreatedAt`
+          ELSE '0001-01-01 00:00:00.000000'
+      END AS `CreatedAt`, `u`.`LastActive`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      ORDER BY `u`.`Username`
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RegisztracioTest.Dtos.UserDto.UserReadDto, RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminController.GetAllUsers (RegisztracioTest) in 436.58ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminController.GetAllUsers (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - 200 - application/json;+charset=utf-8 1358.8221ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/22 - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/22 - 204 - - 1.8549ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 DELETE http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/22 - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`
+      FROM `users` AS `u`
+      WHERE `u`.`Id` = @__p_0
+      LIMIT 1
+✅ Updated LastActive for user System to 3/19/2026 10:21:37 AM
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "DeleteUser", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUser(Int32) on controller RegisztracioTest.Controllers.AdminController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (143ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`, `u1`.`Id`, `u1`.`Death`, `u1`.`Kills`, `u1`.`Score`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      LEFT JOIN `userstats` AS `u1` ON `u`.`Id` = `u1`.`Id`
+      WHERE `u`.`Id` = @__userId_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`Code`, `p`.`Email`, `p`.`Expiration`
+      FROM `passwordresetcodes` AS `p`
+      WHERE `p`.`Email` = @__userEmail_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (143ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`AuthorId`, `p`.`Content`, `p`.`CreatedAt`, `p`.`IsEdited`, `p`.`IsPinned`, `p`.`ParentPostId`, `p`.`ThreadId`, `p`.`UpdatedAt`, `p`.`VoteScore`
+      FROM `posts` AS `p`
+      WHERE `p`.`AuthorId` = @__userId_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `f`.`Id`, `f`.`AuthorId`, `f`.`CategoryId`, `f`.`Content`, `f`.`CreatedAt`, `f`.`IsLocked`, `f`.`IsPinned`, `f`.`Title`, `f`.`UpdatedAt`, `f`.`ViewCount`
+      FROM `forumthreads` AS `f`
+      WHERE `f`.`AuthorId` = @__userId_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (143ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `f`.`Id`, `f`.`CreatedAt`, `f`.`ReceiverId`, `f`.`SenderId`, `f`.`Status`
+      FROM `friendrequests` AS `f`
+      WHERE (`f`.`SenderId` = @__userId_0) OR (`f`.`ReceiverId` = @__userId_0)
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      DELETE FROM `userdetails`
+      WHERE `Id` = @p0;
+      DELETE FROM `userstats`
+      WHERE `Id` = @p1;
+      DELETE FROM `users`
+      WHERE `Id` = @p2;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing StatusCodeResult, setting HTTP status code 204
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest) in 1925.7538ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 DELETE http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/22 - 204 - - 2793.1546ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - 204 - - 0.6955ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - application/json 42
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminLoginController.AdminLogin (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "AdminLogin", controller = "AdminLogin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RegisztracioTest.Dtos.AuthDto.AuthResponseDto]] AdminLogin(RegisztracioTest.Dtos.AdminDto.AdminLoginDto) on controller RegisztracioTest.Controllers.AdminLoginController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (147ms) [Parameters=[@__loginDto_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT `a`.`Id`, `a`.`Password`, `a`.`Username`
+      FROM `admins` AS `a`
+      WHERE `a`.`Username` = @__loginDto_Username_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'RegisztracioTest.Dtos.AuthDto.AuthResponseDto'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminLoginController.AdminLogin (RegisztracioTest) in 431.7999ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminLoginController.AdminLogin (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/AdminLogin/login - 200 - application/json;+charset=utf-8 432.9327ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - 204 - - 0.9183ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`
+      FROM `users` AS `u`
+      WHERE `u`.`Id` = @__p_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (210ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+✅ Updated LastActive for user System to 3/19/2026 10:23:38 AM
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminController.GetAllUsers (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetAllUsers", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RegisztracioTest.Dtos.UserDto.UserReadDto]]] GetAllUsers() on controller RegisztracioTest.Controllers.AdminController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`Username`, CASE
+          WHEN `u0`.`Id` IS NOT NULL THEN `u0`.`Email`
+          ELSE ''
+      END AS `Email`, `u`.`ProfileImages`, CASE
+          WHEN `u0`.`Id` IS NOT NULL THEN `u0`.`CreatedAt`
+          ELSE '0001-01-01 00:00:00.000000'
+      END AS `CreatedAt`, `u`.`LastActive`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      ORDER BY `u`.`Username`
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RegisztracioTest.Dtos.UserDto.UserReadDto, RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminController.GetAllUsers (RegisztracioTest) in 427.8517ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminController.GetAllUsers (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users - 200 - application/json;+charset=utf-8 1348.1330ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/15 - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/15 - 204 - - 0.4808ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 DELETE http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/15 - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`
+      FROM `users` AS `u`
+      WHERE `u`.`Id` = @__p_0
+      LIMIT 1
+✅ Updated LastActive for user System to 3/19/2026 10:24:13 AM
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (151ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "DeleteUser", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUser(Int32) on controller RegisztracioTest.Controllers.AdminController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`, `u1`.`Id`, `u1`.`Death`, `u1`.`Kills`, `u1`.`Score`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      LEFT JOIN `userstats` AS `u1` ON `u`.`Id` = `u1`.`Id`
+      WHERE `u`.`Id` = @__userId_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`Code`, `p`.`Email`, `p`.`Expiration`
+      FROM `passwordresetcodes` AS `p`
+      WHERE `p`.`Email` = @__userEmail_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (143ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`AuthorId`, `p`.`Content`, `p`.`CreatedAt`, `p`.`IsEdited`, `p`.`IsPinned`, `p`.`ParentPostId`, `p`.`ThreadId`, `p`.`UpdatedAt`, `p`.`VoteScore`
+      FROM `posts` AS `p`
+      WHERE `p`.`AuthorId` = @__userId_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `f`.`Id`, `f`.`AuthorId`, `f`.`CategoryId`, `f`.`Content`, `f`.`CreatedAt`, `f`.`IsLocked`, `f`.`IsPinned`, `f`.`Title`, `f`.`UpdatedAt`, `f`.`ViewCount`
+      FROM `forumthreads` AS `f`
+      WHERE `f`.`AuthorId` = @__userId_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `f`.`Id`, `f`.`CreatedAt`, `f`.`ReceiverId`, `f`.`SenderId`, `f`.`Status`
+      FROM `friendrequests` AS `f`
+      WHERE (`f`.`SenderId` = @__userId_0) OR (`f`.`ReceiverId` = @__userId_0)
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (176ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      DELETE FROM `userdetails`
+      WHERE `Id` = @p0;
+      DELETE FROM `userstats`
+      WHERE `Id` = @p1;
+      DELETE FROM `users`
+      WHERE `Id` = @p2;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing StatusCodeResult, setting HTTP status code 204
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest) in 1891.8411ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 DELETE http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/15 - 204 - - 2753.8423ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/21 - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/21 - 204 - - 0.8250ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 DELETE http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/21 - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`
+      FROM `users` AS `u`
+      WHERE `u`.`Id` = @__p_0
+      LIMIT 1
+✅ Updated LastActive for user System to 3/19/2026 10:24:16 AM
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "DeleteUser", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] DeleteUser(Int32) on controller RegisztracioTest.Controllers.AdminController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`, `u1`.`Id`, `u1`.`Death`, `u1`.`Kills`, `u1`.`Score`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      LEFT JOIN `userstats` AS `u1` ON `u`.`Id` = `u1`.`Id`
+      WHERE `u`.`Id` = @__userId_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userEmail_0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`Code`, `p`.`Email`, `p`.`Expiration`
+      FROM `passwordresetcodes` AS `p`
+      WHERE `p`.`Email` = @__userEmail_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `p`.`Id`, `p`.`AuthorId`, `p`.`Content`, `p`.`CreatedAt`, `p`.`IsEdited`, `p`.`IsPinned`, `p`.`ParentPostId`, `p`.`ThreadId`, `p`.`UpdatedAt`, `p`.`VoteScore`
+      FROM `posts` AS `p`
+      WHERE `p`.`AuthorId` = @__userId_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `f`.`Id`, `f`.`AuthorId`, `f`.`CategoryId`, `f`.`Content`, `f`.`CreatedAt`, `f`.`IsLocked`, `f`.`IsPinned`, `f`.`Title`, `f`.`UpdatedAt`, `f`.`ViewCount`
+      FROM `forumthreads` AS `f`
+      WHERE `f`.`AuthorId` = @__userId_0
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `f`.`Id`, `f`.`CreatedAt`, `f`.`ReceiverId`, `f`.`SenderId`, `f`.`Status`
+      FROM `friendrequests` AS `f`
+      WHERE (`f`.`SenderId` = @__userId_0) OR (`f`.`ReceiverId` = @__userId_0)
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      DELETE FROM `userdetails`
+      WHERE `Id` = @p0;
+      DELETE FROM `userstats`
+      WHERE `Id` = @p1;
+      DELETE FROM `users`
+      WHERE `Id` = @p2;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.StatusCodeResult[1]
+      Executing StatusCodeResult, setting HTTP status code 204
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest) in 1840.0258ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.AdminController.DeleteUser (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 DELETE http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Admin/users/21 - 204 - - 2688.7955ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Authorization.DefaultAuthorizationService[2]
+      Authorization failed. These requirements were not met:
+      DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler[12]
+      AuthenticationScheme: Bearer was challenged.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - 401 0 - 5.8174ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - 204 - - 0.7949ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - application/json 44
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(RegisztracioTest.Dtos.UserDto.UserLoginDto) on controller RegisztracioTest.Controllers.UsersController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__request_Username_0='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      WHERE `u`.`Username` = @__request_Username_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (144ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type '<>f__AnonymousType18`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType19`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], RegisztracioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest) in 998.9165ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.UsersController.Login (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/login - 200 - application/json;+charset=utf-8 999.7614ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - 204 - - 0.3060ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 OPTIONS http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - 204 - - 0.3780ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Cors.Infrastructure.CorsService[4]
+      CORS policy execution successful.
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`
+      FROM `users` AS `u`
+      WHERE `u`.`Id` = @__p_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+✅ Updated LastActive for user Meow to 3/19/2026 10:28:59 AM
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'RegisztracioTest.Controllers.UsersController.GetProfile (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetProfile", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetProfile() on controller RegisztracioTest.Controllers.UsersController (RegisztracioTest).
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (141ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`LastActive`, `u`.`ProfileImages`, `u`.`Username`, `u0`.`Id`, `u0`.`CreatedAt`, `u0`.`Email`, `u0`.`PasswordHash`, `u0`.`UserId`, `u1`.`Id`, `u1`.`Death`, `u1`.`Kills`, `u1`.`Score`
+      FROM `users` AS `u`
+      LEFT JOIN `userdetails` AS `u0` ON `u`.`Id` = `u0`.`UserId`
+      LEFT JOIN `userstats` AS `u1` ON `u`.`Id` = `u1`.`Id`
+      WHERE `u`.`Id` = @__userId_0
+      LIMIT 1
+[40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (142ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+      UPDATE `users` SET `LastActive` = @p0
+      WHERE `Id` = @p1;
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'RegisztracioTest.Dtos.UserDto.UserReadDto'.
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action RegisztracioTest.Controllers.UsersController.GetProfile (RegisztracioTest) in 866.3112ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'RegisztracioTest.Controllers.UsersController.GetProfile (RegisztracioTest)'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/api/Users/profile - 200 - application/json;+charset=utf-8 1722.9095ms
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/uploads/profile-images/7_82c6b6c1-435a-40ac-8e00-d255621f7cbf.webp - - -
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/uploads/profile-images/7_82c6b6c1-435a-40ac-8e00-d255621f7cbf.webp'. Physical path: '/home/runner/workspace/wwwroot/uploads/profile-images/7_82c6b6c1-435a-40ac-8e00-d255621f7cbf.webp'
+[40m[32minfo[39m[22m[49m: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://fa96490d-4e09-4a53-9cc9-5a23f1a7f426-00-b1jir99p5w51.kirk.replit.dev/uploads/profile-images/7_82c6b6c1-435a-40ac-8e00-d255621f7cbf.webp - 200 82330 image/webp 19.3498ms
