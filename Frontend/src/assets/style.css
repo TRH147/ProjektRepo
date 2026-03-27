@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Belleza", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1c1c1c;
+}
+
+.user-pic {
+  width: 50px;  
+  height: 50px;   
+  border-radius: 50%; 
+  object-fit: cover;  
+  object-position: center; 
+  cursor: pointer;  
+}
+.user-menu {
+    position: absolute;
+    top: 70px;
+    right: 145px;
+    background: #1c1c1c;
+    border: 1px solid #fae9d7;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 150px;
+    display: none;
+    flex-direction: column;
+    z-index: 200;
+}
+.user-menu a {
+    color: #fae9d7;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+}
+
+.user-menu a:hover {
+    color: #1c1c1c;
+}
+
+.user-menu.active {
+    display: flex;
+}
+
+.user-menu.mobile {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 8px;
+}
+
+.fedo {
+    padding: 10px 10%;
+}
+
+#mod-area {
+    padding: 50px 0;
+}
