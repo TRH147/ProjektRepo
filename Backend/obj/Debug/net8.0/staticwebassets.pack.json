@@ -1,0 +1,129 @@
+{
+  "Files": [
+    {
+      "Id": "/home/runner/workspace/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/images/profiles/user_23_ba699ca0-fd2a-459e-8088-627bdefa9d81.png",
+      "PackagePath": "staticwebassets/images/profiles/user_23_ba699ca0-fd2a-459e-8088-627bdefa9d81.png"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/images/profiles/user_7_a937d26b-f231-4511-993e-a96abf2b10cd.png",
+      "PackagePath": "staticwebassets/images/profiles/user_7_a937d26b-f231-4511-993e-a96abf2b10cd.png"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/img/picture.webp",
+      "PackagePath": "staticwebassets/img/picture.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/js/index.js",
+      "PackagePath": "staticwebassets/js/index.js"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/1000_cc409321-2d97-4887-b7ae-c50d2898d713.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/1000_cc409321-2d97-4887-b7ae-c50d2898d713.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/17_64ee97b6-7a98-4078-9404-d8cb3b5982d6.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/17_64ee97b6-7a98-4078-9404-d8cb3b5982d6.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/2_076b3d01-3cfb-47c6-91f0-73036c855ec5.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/2_076b3d01-3cfb-47c6-91f0-73036c855ec5.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/2_fd4341ae-89c2-4f52-bfd6-64b57fd23b1b.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/2_fd4341ae-89c2-4f52-bfd6-64b57fd23b1b.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/3_1214fbaa-3928-4fcd-84cc-2c5f6ffa5850.png",
+      "PackagePath": "staticwebassets/uploads/profile-images/3_1214fbaa-3928-4fcd-84cc-2c5f6ffa5850.png"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/3_42042344-3ca3-490d-81bb-e09026649ada.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/3_42042344-3ca3-490d-81bb-e09026649ada.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/3_42846a7d-36bd-435a-9d9e-aa2b785b58ee.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/3_42846a7d-36bd-435a-9d9e-aa2b785b58ee.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/3_4fd7d064-46ed-4b1b-9cad-fb55946c1a05.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/3_4fd7d064-46ed-4b1b-9cad-fb55946c1a05.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/3_b28f4a0e-dc8d-460a-ad71-57f6134030c1.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/3_b28f4a0e-dc8d-460a-ad71-57f6134030c1.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_336ccc83-aa1f-4591-8e7b-d2c7ce007dcb.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_336ccc83-aa1f-4591-8e7b-d2c7ce007dcb.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_7d8acc6a-7ff9-4def-9163-e8a038b86cf9.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_7d8acc6a-7ff9-4def-9163-e8a038b86cf9.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_8b9475ff-f1b7-4e7f-84f5-db0840fab3b7.png",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_8b9475ff-f1b7-4e7f-84f5-db0840fab3b7.png"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_bba41159-8df8-4370-8b7d-1f871a50786e.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_bba41159-8df8-4370-8b7d-1f871a50786e.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_c9c943a9-5ef2-4612-9191-bfc968ce1320.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_c9c943a9-5ef2-4612-9191-bfc968ce1320.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_cb5831ed-389e-4ef3-a766-e84c7fdcb957.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_cb5831ed-389e-4ef3-a766-e84c7fdcb957.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/4_d7dc308e-0757-48cf-bae6-9c85df24ab31.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/4_d7dc308e-0757-48cf-bae6-9c85df24ab31.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/5_63d4c9cf-f740-4c4e-8a7b-85f1e7b791f8.png",
+      "PackagePath": "staticwebassets/uploads/profile-images/5_63d4c9cf-f740-4c4e-8a7b-85f1e7b791f8.png"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/7_82c6b6c1-435a-40ac-8e00-d255621f7cbf.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/7_82c6b6c1-435a-40ac-8e00-d255621f7cbf.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/8_61b171ff-94fb-445a-869e-5dd87b73ed64.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/8_61b171ff-94fb-445a-869e-5dd87b73ed64.webp"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/9_fb1198e4-8abb-433a-ad47-a9b38f6e4a69.jpg",
+      "PackagePath": "staticwebassets/uploads/profile-images/9_fb1198e4-8abb-433a-ad47-a9b38f6e4a69.jpg"
+    },
+    {
+      "Id": "/home/runner/workspace/wwwroot/uploads/profile-images/simple-outline-user-configuration-setting-600nw-2636195015.webp",
+      "PackagePath": "staticwebassets/uploads/profile-images/simple-outline-user-configuration-setting-600nw-2636195015.webp"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RegisztracioTest.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.RegisztracioTest.props",
+      "PackagePath": "build\\RegisztracioTest.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RegisztracioTest.props",
+      "PackagePath": "buildMultiTargeting\\RegisztracioTest.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RegisztracioTest.props",
+      "PackagePath": "buildTransitive\\RegisztracioTest.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
